@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ponto Digital</title>
     <link rel="stylesheet" href="style.css">
-    
         <header>
             <div id="back">
                 <nav>
@@ -21,14 +20,33 @@
                     </ul>
                 </nav>
                 <img src="img/barra laranja.png" alt="" id="logo">
-            </div>
-        </header>
-</head>
-<body>
-    <main>
-        <div>
-            <br><br><br><br>
-            <section id="produto">
+                
+            </header>
+
+                <div>
+                    <script type="text/javascript">
+                    function slide1(){
+                        // document.getElementById('id').src="1.bmp";
+                        setTimeout("slide2()", 1000)
+                    }
+                    function slide2(){
+                        // document.getElementById('id').src="2.bmp";
+                        setTimeout("slide3()", 1000)
+                    }
+                    function slide3(){
+                        // document.getElementById('id').src="3.bmp";
+                        setTimeout("slide1()", 1000)
+                    }
+                    </script>
+                </div>
+        </head>
+
+        <!-- <body onload="slide1()"> -->
+            <!-- <img src="img/banner ponto digital.png" id="id"> -->
+            <main>
+                <div>
+                    <br><br><br><br>
+                    <section id="produto">
                 <h2>Ponto Digital</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus inventore, 
                     sint earum quod aspernatur facere ratione magnam culpa laboriosam molestiae recusandae amet incidunt temporibus, 
@@ -59,28 +77,60 @@
 
             </div>
         
-        <section id="planos">
-            
             <h2>Conheça nossos planos</h2>
+            <section id="planos">
             
-            <article>
-                <h4>basic</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid</p>
+            
+            <article class="a1">
+                <h4>Basic</h4>
+                <p>R$ <span id="spn"> 29,90</span></p>
+                <p>Ideal para pequenas empresas
+                <br> Permite gerenciar 
+                até 5 funcionários</p>
+                <br> <br> <br> <br> <br> <br>  <br> 
+                <a href="#">Gerar pedido</a>
             </article>
 
-            <article>
-                 <h4>advenced</h4>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid</p>
+            <article class="a2">
+                 <h4>Advenced</h4>
+                 <p>R$ <span id="spn">149,90</span></p>
+                <p>Ideal para empresas de porte médio
+                <br> Permite gerenciar 
+                até 50 funcionários</p>
+                <br> <br> <br> <br> <br><br> <br> 
+                <a href="#">Gerar pedido</a>
                 </article>
             
-            <article>
-               <h4>professional</h4>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid</p>
+            <article class="a3">
+               <h4>Professional</h4>
+               <p>R$<span id="spn">299,90</span></p>
+               <p>Ideal para empresas de grande porte
+               <br> Permite gerenciar 
+               até 300 funcionários</p>
+               <br> <br> <br> <br> <br> <br> <br>  
+               <a href="#">Gerar pedido</a>
              </article>
-    
-        </section>
+             
+             <article class="a4">
+                 <p> Teste <br> grátis por <br> 30 dias!</p>
+                </article>
+            </section>
+                
 
         <section id="comentarios">
+            <h2>Comentários</h2>
+            <div>
+                <div class="papa">
+                    <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
+                    <p>Julia Maria</p>
+                    <p>Muito íncrivel, excelente!</p>
+                </div>
+                <div class="papa">
+                    <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
+                    <p>Gloria Pereira</p>
+                    <p>Amei o site</p>
+                </div>
+            </div>
             <img src="img/jaca.png" alt="funcionarios">
         </section>
 
