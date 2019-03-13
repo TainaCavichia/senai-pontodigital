@@ -14,7 +14,8 @@
 }
 #menu a{
     color: white;
-    font-size: 1.3em
+    font-size: 1.5em;
+    font-family: 'Sui Generis'
 }
 #back{
     background-image: url(../senai-pontodigital/img/banner\ ponto\ digital.png);
@@ -28,29 +29,43 @@
     margin-bottom: -1vh
 }
 h2{
+    font-family: 'Sui Generis';
     font-size: 3em;
-    padding: 2%;
-    color: #00347f;
+    padding: 4%;
+    color: #005eb9;
+}
+#produto{
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
 }
 #produto p{
-    font-size: 1.3em;
-    padding-bottom: 4%
+    font-size: 1.8em;
+    padding-bottom: 4%;
+    margin-bottom: 5%;
 }
 #funcionamento{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 1.3em;
+    margin-bottom: 5% 
 }
 h3{
     color: #f2a620;
     padding-bottom: 3%;
+    font-size: 2em;
+    font-family: 'Sui Generis';
 }
 .bola{
     padding: 5%;
 }
+.bola p{
+    font-size: 1.3em;
+}
 .imagem{
-    padding-bottom: 6%;
+    margin-top: 16%;
+    padding-bottom: 9%;
 }
 #planos{
     display: flex;
@@ -69,15 +84,14 @@ h3{
         
     }
     .a1 h4{
-        font-size: 3em;
-        text-transform: uppercase;
+        font-size: 2.8em;
         padding: 7%;
         color: #005eb9;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        font-family: 'Sui Generis';
     }
-     .a1 p{
+    .a1 p{
         font-size: 1.8em;
         padding: 6%;
     }
@@ -90,13 +104,13 @@ h3{
         height: 70vh;
         margin-top: 3%; 
     }
-        .a2 h4{
-            font-size: 3em;
-            padding: 7%;  
-            color: #005eb9;
-            -webkit-text-stroke-color: black;
-            -webkit-text-stroke-width: 1px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    .a2 h4{
+        font-size: 2.8em;
+        padding: 7%;  
+        color: #005eb9;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+        font-family: 'Sui Generis';
     }
     .a2 p{
         font-size: 1.8em;
@@ -112,17 +126,17 @@ h3{
         margin-top: 3%; 
     }
     .a3 h4{
-        font-size: 3em;
+        font-size: 2.8em;
         padding: 7%;  
         color: #005eb9;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
-}
-.a3 p{
-    font-size: 1.8em;
-    padding: 6%;
-}
+        font-family: 'Sui Generis';
+    }
+    .a3 p{
+        font-size: 1.8em;
+        padding: 6%;
+    }
     .a4{
         background:  #005eb9;
         color: #f2a620;
@@ -130,8 +144,8 @@ h3{
         height: 70vh;
         margin-top: 3%;
         padding-top: 18vh; 
-        font-size: 4em; 
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        font-size: 3.9em; 
+        font-family: 'Sui Generis';
     }
     #spn{
         color: #f2a620;
@@ -146,14 +160,96 @@ h3{
         color: white;
     }
     .foto{
-        width: 5%;
-        height: 5%;
+        width: 20%;
+        height: 20%;
         border-radius: 30%;
         }
     .papa{
-        display: flex;
+        margin: 5vh 0
     }
     #comentarios h2{
         margin: 7%;
     }
+    .flexii{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center
+    }
+    .flexiiii{
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .flexiiii p{
+        margin: 0 0 0 5vh;
+        font-size: 2em;
+        text-align: left
+    }
+    #arrumar{
+        width: 30%;
+        height: 30%;
+    }
+    .left{
+        padding-left: -5vh
+    }
+    #SAC h2{
+        margin-top: 13%;
+        margin-bottom: 4%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 1230px;
+        width: 90%;
+        margin: auto;
+    }  
+    .bla input{
+        width: 45%;
+        height: 4.5vh;
+        margin: 1%;
+    }   
+    ::placeholder{
+        text-align: left;
+        font-size: 1.5em;
+    }   
+    .submitt{
+        width: 20%;
+        height: 5vh;
+        background-color: #f2a620;
+        font-size: 1.2em;
+        margin-left: auto;
+        margin-right: 4%;
+        margin-top: 2%;
+        
+    }     
+    #quemsomos h2{
+        color: white;
+    } 
+    #quemsomos img{
+        width: 8%;
+        height: 8%;
+    }  
+    #quemsomos p{
+        font-size: 2em;
+        color: white;
+    } 
+    #quemsomos{
+        margin-top: 15%;
+        background-color: #005eb9;
+        padding: 10%;
+    }    
+    #cadastro h2{
+        margin: 5%;
+    }   
+    #cadastro h3{
+        font-size: 3em;
+    } 
+
+     .cad{
+         display: flex;
+     }   
+    
     
