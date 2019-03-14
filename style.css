@@ -14,8 +14,13 @@
 }
 #menu a{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: 'Sui Generis'
+}
+#menu a:hover{
+    color: #005eb9;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.5px;
 }
 #back{
     background-image: url(../senai-pontodigital/img/banner\ ponto\ digital.png);
@@ -46,8 +51,7 @@ h2{
 }
 #funcionamento{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     font-size: 1.3em;
     margin-bottom: 5% 
 }
@@ -56,6 +60,7 @@ h3{
     padding-bottom: 3%;
     font-size: 2em;
     font-family: 'Sui Generis';
+    align-items: center;
 }
 .bola{
     padding: 5%;
@@ -149,7 +154,7 @@ h3{
     }
     #spn{
         color: #f2a620;
-        font-size: 3em;
+        font-size: 2.6em;
         font-family: 'calibri';
     }
     article a{
@@ -208,7 +213,7 @@ h3{
     }  
     .bla input{
         width: 45%;
-        height: 4.5vh;
+        height: 5vh;
         margin: 1%;
     }   
     ::placeholder{
@@ -217,7 +222,8 @@ h3{
     }   
     .submitt{
         width: 20%;
-        height: 5vh;
+        height: 7vh;
+        border-radius: 10px;
         background-color: #f2a620;
         font-size: 1.2em;
         margin-left: auto;
@@ -245,11 +251,52 @@ h3{
         margin: 5%;
     }   
     #cadastro h3{
-        font-size: 3em;
+        font-size: 2.5em;
     } 
-
      .cad{
          display: flex;
+         flex-direction: column;
      }   
+     .cad input{
+         height: 5vh;
+         width: 80vh;
+         margin: 2.5%;
+         font-size: 0.7em;
+     }
+    .amem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1300px;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 15%;
+  
+    }
+    .submit{
+        border-radius: 10px;
+        background-color: #f2a620;
+        -webkit-border-before-width: 1px;
+        -webkit-border-before-color: black;
+    }
+    footer{
+        background-color: #005eb9;
+    }
+    address{
+        font-size: 1.6em;
+        color: white;
+        padding: 2%;
+    }
+    .pic{
+        width:2%;
+        height: 2%;
+    }
+    .face{
+        width: 1%;
+        height: 1%;
+    }
+    
+   
+  
     
     
