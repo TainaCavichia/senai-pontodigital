@@ -14,7 +14,7 @@
 }
 #menu a{
     color: white;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-family: 'Sui Generis'
 }
 #menu a:hover{
@@ -69,6 +69,14 @@ h3{
     font-size: 1.3em;
 }
 .imagem{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+.imagens{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+.imagemm{
     margin-top: 16%;
     padding-bottom: 9%;
 }
@@ -173,7 +181,7 @@ h3{
         margin: 5vh 0
     }
     #comentarios h2{
-        margin: 7%;
+        margin: 5%;
     }
     .flexii{
         display: flex;
@@ -207,12 +215,12 @@ h3{
     .form{
         display: flex;
         flex-direction: column;
-        max-width: 1230px;
+        max-width: 1400px;
         width: 90%;
         margin: auto;
     }  
     .bla input{
-        width: 45%;
+        width: 60vh;
         height: 5vh;
         margin: 1%;
     }   
@@ -227,25 +235,32 @@ h3{
         background-color: #f2a620;
         font-size: 1.2em;
         margin-left: auto;
-        margin-right: 4%;
+        margin-right: 7.5%;
         margin-top: 2%;
         
-    }     
+    }
     #quemsomos h2{
         color: white;
+        padding-bottom: 4%
     } 
     #quemsomos img{
-        width: 8%;
-        height: 8%;
+        width: 12%;
+        height: 12%;
+        padding: 4% 1% 4% 1%; 
     }  
     #quemsomos p{
-        font-size: 2em;
+        font-size: 1.8em;
         color: white;
+        width: 65%;
+        margin: 0 auto
     } 
     #quemsomos{
+        margin: auto;
         margin-top: 15%;
         background-color: #005eb9;
-        padding: 10%;
+        background-size: cover;
+        padding-bottom: 10%;
+        width: 100%
     }    
     #cadastro h2{
         margin: 5%;
@@ -259,7 +274,7 @@ h3{
      }   
      .cad input{
          height: 5vh;
-         width: 80vh;
+         width: 60vh;
          margin: 2.5%;
          font-size: 0.7em;
      }
@@ -267,17 +282,18 @@ h3{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        max-width: 1300px;
+        max-width: 1400px;
         width: 90%;
         margin: auto;
         padding-bottom: 15%;
   
     }
-    .submit{
+    .submittt{
         border-radius: 10px;
         background-color: #f2a620;
         -webkit-border-before-width: 1px;
         -webkit-border-before-color: black;
+
     }
     footer{
         background-color: #005eb9;
@@ -285,18 +301,86 @@ h3{
     address{
         font-size: 1.6em;
         color: white;
-        padding: 2%;
+        text-align: left
     }
-    .pic{
-        width:2%;
-        height: 2%;
+    #idiomas{
+        height: 7vh;
+        width: 20%;
+        font-size: 1.3em;
+        margin: 3%;
     }
-    .face{
-        width: 1%;
-        height: 1%;
+
+    #rodape{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%
     }
-    
-   
+    #oi img{
+        height: 4vh;
+        margin: 0 2vh
+    }
+    @media screen and (max-width:1366px){
+        #menu a{
+            color: white;
+            font-size: 1.3em;
+            font-family: 'Sui Generis'
+        }
+        .bola p{
+            font-size: 1.2em
+        }
+        .imagem{
+          width: 50%;
+        }
+        .imagens{
+            width: 60%;
+            margin-top: 16%;
+        }
+        .imagemm{
+            width: 50%;
+            margin-top: 12%;
+        }
+        h3{
+            font-size: 1.8em;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width:1000px){
+        #menu a{
+            color: white;
+            font-size: 1em;
+            font-family: 'Sui Generis'
+        }
+        h2{
+            font-size: 2.8em;
+        }
+        #produto p{
+            font-size: 1.6;
+        }
+      #funcionamento{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+      }
+      .imagem{
+        width: 30%;
+      }
+      .imagens{
+          width: 40%;
+          margin-top: 16%;
+      }
+      .imagemm{
+          width: 30%;
+          margin-top: 12%;
+      }
+    }
+    @media screen and (max-width:768px){
+
+    }
+    @media screen and (max-width:360px){
+
+    }
+
   
     
     
