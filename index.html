@@ -19,13 +19,35 @@
                         <li> <a href="#">Login</a> </li>
                     </ul>
                 </nav>
-                <img id="logo" src="img/barra laranja.png" alt="logotipo ponto digital">
+                <div id="espa"></div>
+                <div id="imag">
+                    <img src="img/banner ponto digital.png" alt="" class="imagem1">
+                    <img src="img/banner ponto digital - Copia.png" alt="" class="imagem1 w3-animate-top">
+                    <img src="img/banner ponto digital - Copia (2).png" alt="" class="imagem1">
+                </div>
+                    <p id="logo">Ponto digital</p>
             </div>
             </header>
         </head>
-      <body>      
-            <main>
-                <div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("imagem1");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 10000);   
+            }
+        </script>
+<body>      
+    <main>
+        <div>
                     <br><br><br><br>
                     <section id="produto">
                 <h2>Ponto Digital</h2>
