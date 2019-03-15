@@ -42,7 +42,7 @@
               myIndex++;
               if (myIndex > x.length) {myIndex = 1}    
               x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 10000);   
+              setTimeout(carousel, 5000);   
             }
         </script>
 <body>      
@@ -50,12 +50,12 @@
         <div>
                     <br><br><br><br>
                     <section id="produto">
-                <h2>Ponto Digital</h2>
+                <h1>Ponto Digital</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus inventore, 
                     sint earum quod aspernatur facere ratione magnam culpa laboriosam molestiae recusandae amet incidunt temporibus, 
                     hic vero ut reiciendis quis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, consequatur quam! Cum perspiciatis sit dolor facilis, sint dolorum architecto? Rerum eius sint laborum excepturi ad suscipit vel minima? Commodi, animi!</p>
                 </section>
-                <img src="img/linha descrição .png" alt="linha">
+                <img class="linha" src="img/linha descrição .png" alt="linha">
                 <section id="funcionamento">
                     
                     <article class="bola">
@@ -125,14 +125,13 @@
                 <div>
                     <div class="papa flexiiii left">
                         <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
-                        <p> Julia Maria <br><br> Muito íncrivel, excelente!</p>
+                        <p> <span id="qwerty"> Julia Maria </span><br><br> Muito íncrivel, excelente!</p>
                     </div>
                     <div class="papa flexiiii esquerda">
                         <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
-                        <p>Gloria Pereira <br><br> Amei o site</p>
+                        <p><span id="qwerty">Gloria Pereira </span> <br><br> Amei o site</p>
                     </div>
                 </div>
-                <img src="img/jaca.png" alt="funcionarios" id="arrumar">
             </div>
         </section>
 
@@ -155,8 +154,8 @@
 
         <section id="quemsomos">
             <h2>Quem somos?</h2>
-            <img src="img/Carlos.png" alt="">
-            <img src="img/César.png" alt="">
+            <img src="img/Carlos.png" alt="Carlos Tsukamoto">
+            <img src="img/César.png" alt="César Sportore">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit aperiam cum, saepe ad perspiciatis, 
             delectus voluptatum voluptatibus excepturi quasi nihil ea? Laudantium magni aliquam delectus molestiae vitae sint velit!</p>
         </section>

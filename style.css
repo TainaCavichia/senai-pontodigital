@@ -55,13 +55,14 @@
 #logo{
     width: 100%;
     background: #ffa700;
-    font-family: 'sui generis';
-    font-size: 3.5em;
-    color:#005ebd;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    text-align: left;
+    color:#ffa700;
     padding: 3vh 0 3vh 15vh;
+}
+h1{
+    font-family: 'Sui Generis';
+    font-size: 3em;
+    padding: 4%;
+    color: #005eb9;
 }
 h2{
     font-family: 'Sui Generis';
@@ -112,22 +113,23 @@ h3{
 }
 #planos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center;   
 }
 .a1 {
     box-shadow: 1px 1px black, 
-               -1px 1px black,
-               1px -1px black,
-              -1px -1px black;
-              width: 20%;
-              height: 70vh;
-        margin-top: 3%; 
-        
+    -1px 1px black,
+    1px -1px black,
+    -1px -1px black;
+    width: 20%;
+    height: 70vh;
+    margin-top: 3%; 
+    border-radius: 20px;
+    
     }
     .a1 h4{
-        font-size: 2.8em;
+        font-size: 2.2em;
         padding: 7%;
         color: #005eb9;
         -webkit-text-stroke-color: black;
@@ -146,9 +148,10 @@ h3{
         width: 20%;
         height: 70vh;
         margin-top: 3%; 
+        border-radius: 20px;
     }
     .a2 h4{
-        font-size: 2.8em;
+        font-size: 2.2em;
         padding: 7%;  
         color: #005eb9;
         -webkit-text-stroke-color: black;
@@ -166,10 +169,11 @@ h3{
         -1px -1px black;
         width: 20%;
         height: 70vh;
+        border-radius: 20px;
         margin-top: 3%; 
     }
     .a3 h4{
-        font-size: 2.8em;
+        font-size: 2.2em;
         padding: 7%;  
         color: #005eb9;
         -webkit-text-stroke-color: black;
@@ -188,6 +192,7 @@ h3{
         margin-top: 3%;
         padding-top: 18vh; 
         font-size: 3.9em; 
+        border-radius: 20px;
         font-family: 'Sui Generis';
     }
     #spn{
@@ -198,7 +203,7 @@ h3{
     article a{
         font-size: 1.8em;
         background-color: #005eb9;
-        padding: 3vh 10vh;
+        padding: 3vh 7vh;
         border-radius: 5%;
         color: white;
     }
@@ -206,7 +211,7 @@ h3{
         width: 20%;
         height: 20%;
         border-radius: 30%;
-        }
+    }
     .papa{
         margin: 5vh 0
     }
@@ -231,12 +236,12 @@ h3{
         font-size: 2em;
         text-align: left
     }
-    #arrumar{
-        width: 30%;
-        height: 30%;
-    }
     .left{
         padding-left: -5vh
+    }
+    #qwerty{
+        color: #005eb9;
+        font-family: 'Sui Generis'
     }
     #SAC h2{
         margin-top: 13%;
@@ -298,16 +303,22 @@ h3{
     #cadastro h3{
         font-size: 2.5em;
     } 
-     .cad{
-         display: flex;
-         flex-direction: column;
-     }   
-     .cad input{
-         height: 5vh;
-         width: 60vh;
-         margin: 2.5%;
-         font-size: 0.7em;
-     }
+    .cad{
+        display: flex;
+        flex-direction: column;
+    }   
+    .cad input{
+        height: 5vh;
+        width: 60vh;
+        margin: 2.5%;
+        font-size: 1em;
+        box-shadow: 1px 1px black,
+        -1px 1px black,
+        1px -1px black,
+        -1px -1px black;
+        border-radius: 10px;
+        border: none;
+    }
     .amem{
         display: flex;
         flex-wrap: wrap;
@@ -316,14 +327,17 @@ h3{
         width: 90%;
         margin: auto;
         padding-bottom: 15%;
-  
+        
     }
     .submittt{
+        box-shadow: 1px 1px black,
+        -1px 1px black,
+        1px -1px black,
+        -1px -1px black;
         border-radius: 10px;
         background-color: #f2a620;
-        -webkit-border-before-width: 1px;
-        -webkit-border-before-color: black;
-
+        border: none;
+        
     }
     footer{
         background-color: #005eb9;
@@ -339,7 +353,7 @@ h3{
         font-size: 1.3em;
         margin: 3%;
     }
-
+    
     #rodape{
         display: flex;
         justify-content: space-evenly;
@@ -350,17 +364,46 @@ h3{
         height: 4vh;
         margin: 0 2vh
     }
+    @media screen and (max-width:1480px){
+        article a{
+            padding: 3vh 5vh; 
+        }
+        .a1 h4{
+            font-size: 2.1em;
+        }
+        .a2 h4{
+            font-size: 2.1em;
+        }
+        .a3 h4{
+            font-size: 2.1em;
+        }
+        .a1 p{
+            font-size: 1.6em;
+        }
+        .a2 p{
+            font-size: 1.6em;
+        }
+        .a3 p{
+            font-size: 1.6em;
+        }
+    }
     @media screen and (max-width:1366px){
         #menu a{
             color: white;
             font-size: 1.3em;
             font-family: 'Sui Generis'
         }
+        #espa{
+            height: 9.6vh;
+        }
+        .linha{
+            width: 80vh
+        }
         .bola p{
             font-size: 1.2em
         }
         .imagem{
-          width: 50%;
+            width: 50%;
         }
         .imagens{
             width: 60%;
@@ -370,47 +413,264 @@ h3{
             width: 50%;
             margin-top: 12%;
         }
+        .a1{
+            width: 40%;
+        }
+        .a2{
+            width: 40%;
+        }
+        .a3{
+            width: 40%;
+        }
+        .a4{
+            width: 40%;
+        }
+        .a1 h4{
+            font-size: 2.8em;
+        }
+        .a2 h4{
+            font-size: 2.8em;
+        }
+        .a3 h4{
+            font-size: 2.8em;
+        }
+        .a1 p{
+            font-size: 1.8em;
+        }
+        .a2 p{
+            font-size: 1.8em;
+        }
+        .a3 p{
+            font-size: 1.8em;
+        }
         h3{
             font-size: 1.8em;
             align-items: center;
         }
     }
+    
     @media screen and (max-width:1000px){
         #menu a{
             color: white;
             font-size: 1em;
             font-family: 'Sui Generis'
         }
+        #espa{
+            height: 9vh;
+        }
+        h1{
+            font-size: 2.8em;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
         h2{
             font-size: 2.8em;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        .linha{
+            width: 60vh
         }
         #produto p{
             font-size: 1.6;
         }
-      #funcionamento{
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-      }
-      .imagem{
-        width: 30%;
-      }
-      .imagens{
-          width: 40%;
-          margin-top: 16%;
-      }
-      .imagemm{
-          width: 30%;
-          margin-top: 12%;
-      }
+        #funcionamento{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .imagem{
+            width: 30%;
+        }
+        .imagens{
+            width: 40%;
+            margin-top: 16%;
+        }
+        .imagemm{
+            width: 30%;
+            margin-top: 12%;
+        }
+    }
+    @media screen and (max-width:940px){
+        .linha{
+            width: 50vh
+        }
+        .a1 h4{
+            font-size: 2.3em;
+        }
+        .a2 h4{
+            font-size: 2.3em;
+        }
+        .a3 h4{
+            font-size: 2.3em;
+        }
     }
     @media screen and (max-width:768px){
-
+        .linha{
+            width: 40vh
+        }
+        h1{
+            font-size: 2.6em;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        h2{
+            font-size: 2.6em;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        #cadastro h3{
+            font-size: 1.8em;
+        }
+        .cad input{
+            height: 4vh;
+            width: 35vh;
+            font-size: 0.8em;
+        }
+        #produto p{
+            font-size: 1.5em;
+        }
+        .a1{
+            width: 80%;
+        }
+        .a2{
+            width: 80%;
+        }
+        .a3{
+            width: 80%;
+        }
+        .a4{
+            width: 80%;
+        }
+        .a1 h4{
+            font-size: 2.6em;
+        }
+        .a2 h4{
+            font-size: 2.6em;
+        }
+        .a3 h4{
+            font-size: 2.6em;
+        }
+        .a1 p{
+            font-size: 1.6em;
+        }
+        .a2 p{
+            font-size: 1.6em;
+        }
+        .a3 p{
+            font-size: 1.6em;
+        }
+        article a{
+            padding: 3vh 6.5vh;
+        }
+    }
+    @media screen and (max-width:500px){
+        h1{
+            font-size: 2em;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        h2{
+            font-size: 2em;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        .a1 h4{
+            font-size: 2.3em;
+        }
+        .a2 h4{
+            font-size: 2.3em;
+        }
+        .a3 h4{
+            font-size: 2.3em;
+        }
     }
     @media screen and (max-width:360px){
-
+        h1{
+            font-size: 2.3em;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        h2{
+            font-size: 1.7em;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        #produto{
+            margin: 5%;
+        }
+        #produto p{
+            font-size: 1.3em;
+        }
+        .linha{
+            width:25vh
+        }
+        h3{
+            font-size: 1.7em;
+        }
+        .bola p{
+            font-size: 1.1em;
+        }
+        article a{
+            padding: 3vh 3vh;
+        }
+        .a1 h4{
+            font-size: 2.1em;
+        }
+        .a2 h4{
+            font-size: 2.1em;
+        }
+        .a3 h4{
+            font-size: 2.1em;
+        }
+        .a4{
+            margin-bottom: 15%
+        }
+        .flexiiii p{
+            font-size: 1.4em;
+        }
+        .flexii{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 8%; 
+        }
+        .foto{
+            width: 25%;
+            height: 25%;
+        }
+        #qwerty{
+            font-size: 1.1em
+        }
+        .bla input{
+            width: 30vh;
+            height: 4vh;
+            margin: 1%;
+        }  
+        .submitt{
+            width: 50%;
+            height: 4vh; 
+            font-size: 1.1em;
+        }
+        #quemsomos{
+            padding-top: 10%;
+        }
+        #quemsomos p{
+            font-size: 1.4em;
+            width: 90%;
+            padding-bottom: 10%;
+        }
+        #quemsomos img{
+            width: 20%;
+            height: 20%;
     }
-
-  
+    #cadastro h3{
+        font-size: 1.6em;
+    }
+    .cad input{
+        height: 4vh;
+        width: 30vh;
+        font-size: 0.8em;
+    }
+}
     
     
