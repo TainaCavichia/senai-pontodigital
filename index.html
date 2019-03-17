@@ -6,20 +6,34 @@
     <title>Ponto Digital</title>
     <link rel="stylesheet" href="style.css">
         <header>
-            <div id="back">
-                <nav>
-                    <ul id="menu">
-                        <li> <a href="#">Home</a> </li>
-                        <li> <a href="#plano">Planos</a> </li>
-                        <li> <a href="#quemsomos">Quem somos?</a> </li>
-                        <li> <a href="#">SAC</a> </li>
-                        <li> <a href="#">Depoimentos</a> </li>
-                        <li> <a href="#">Contatos</a> </li>
-                        <li> <a href="#">Cadastro</a> </li>
-                        <li> <a href="#">Login</a> </li>
+            <div>
+                <div class="box">
+                    <div class="container">
+                                <div class="header-menu">
+                        <button><img src="http://www.i2symbol.com/images/symbols/check/multiplication_x_u2715_icon_256x256.png"></button>
+                                </div>
+                    <nav>
+                    <ul class="top-menu">
+                        <li class="menu-items"> <a href="#">Home</a> </li>
+                        <li class="menu-items"> <a href="#plano">Planos</a> </li>
+                        <li class="menu-items"> <a href="#quemsomos">Quem somos?</a> </li>
+                        <li class="menu-items"> <a href="#">SAC</a> </li>
+                        <li class="menu-items"> <a href="#">Depoimentos</a> </li>
+                        <li class="menu-items"> <a href="#">Contatos</a> </li>
+                        <li class="menu-items"> <a href="#">Cadastro</a> </li>
+                        <li class="menu-items"> <a href="#">Login</a> </li>
                     </ul>
-                </nav>
-                <div id="espa"></div>
+                    </nav>
+                    </div>
+               </div>
+               <div class="open-menu">
+                    <button><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png"></button>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+                <script src="js/slideIn.js"></script>    
+
+                <!-- <div id="espa"></div> -->
                 <div id="imag">
                     <img src="img/banner ponto digital.png" alt="" class="imagem1">
                     <img src="img/banner ponto digital - Copia.png" alt="" class="imagem1 w3-animate-top">
@@ -51,11 +65,9 @@
                     <br><br><br><br>
                     <section id="produto">
                 <h1>Ponto Digital</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus inventore, 
-                    sint earum quod aspernatur facere ratione magnam culpa laboriosam molestiae recusandae amet incidunt temporibus, 
-                    hic vero ut reiciendis quis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, consequatur quam! Cum perspiciatis sit dolor facilis, sint dolorum architecto? Rerum eius sint laborum excepturi ad suscipit vel minima? Commodi, animi!</p>
+                <p>O Ponto Digital é uma ótima solução quando se trata de funcionários. Com o nosso site você pode controlar o rendimento do trabalho de cada funcionário em tempo real, e principalmente, a qualquer hora, no computador, tablet ou smartphone, otimizando assim tempo e dinheiro. </p>
                 </section>
-                <img class="linha" src="img/linha descrição .png" alt="linha">
+                <img class="linha" src="img/linha descrição .png" alt="linha"> 
                 <section id="funcionamento">
                     
                     <article class="bola">
@@ -67,7 +79,7 @@
                     <article class="bola">
                         <img class="imagem" src="img/Camada 01.png" alt="">
                         <h3>Subtitulo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam excepturi, distinctio esse cupiditate numquam </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ipsa quid Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, deserunt? Facere laboriosam voluptatum   </p>
                     </article>
                     
                     <article class="bola">
@@ -86,11 +98,12 @@
             <article class="a1">
                 <h4>Basic</h4>
                 <p>R$ <span id="spn"> 29,90</span></p>
-                <p>Ideal para pequenas empresas
+                <p>Ideal para empresas de pequeno porte
                 <br> Permite gerenciar 
                 até 5 funcionários</p>
-                <br> <br> <br> <br> <br> <br>  <br> <br>
-                <a href="#">Gerar pedido</a>
+                <div class="gerar">    
+                    <a href="#cadastro">Gerar pedido</a>
+                </div>
             </article>
 
             <article class="a2">
@@ -99,19 +112,20 @@
                 <p>Ideal para empresas de porte médio
                 <br> Permite gerenciar 
                 até 50 funcionários</p>
-                <br> <br> <br> <br> <br><br> <br> <br>
-                <a href="#">Gerar pedido</a>
-                </article>
-            
+                <div class="gerar">
+                    <a href="#cadastro">Gerar pedido</a>
+                </div>
+            </article>
             <article class="a3">
                <h4>Professional</h4>
                <p>R$<span id="spn">299,90</span></p>
                <p>Ideal para empresas de grande porte
                <br> Permite gerenciar 
                até 300 funcionários</p>
-               <br> <br> <br> <br> <br> <br> <br> <br>
-               <a href="#">Gerar pedido</a>
-             </article>
+               <div class="gerar">
+                   <a href="#cadastro">Gerar pedido</a>
+               </div>
+            </article>
              
              <article class="a4">
                  <p> Teste <br> grátis por <br> 30 dias!</p>
@@ -156,8 +170,7 @@
             <h2>Quem somos?</h2>
             <img src="img/Carlos.png" alt="Carlos Tsukamoto">
             <img src="img/César.png" alt="César Sportore">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit aperiam cum, saepe ad perspiciatis, 
-            delectus voluptatum voluptatibus excepturi quasi nihil ea? Laudantium magni aliquam delectus molestiae vitae sint velit!</p>
+            <p>A Agora vai nasceu em 2012, com a iniciativa de gerenciar funcionários digitalmente, para acabar com as fraudes ao bater o ponto e ter mais controle, utilizando técnologias modernas. No início era apenas uma ideia sem força, e acabou sendo desenvolvida por dois empreendedores incríveis, César Sportore e Carlos Tsukamoto que foram, ao longo dos anos, construindo nossa equipe de profissionais, que hoje têm orgulho de dizer que são da Agora vai.</p>
         </section>
 
         <section id="cadastro">
@@ -167,31 +180,27 @@
                 <div class="amem">
                     <div>
                         <h3>Cadastre-se</h3>
-                        <div class="cad">
-                            
-                            <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
-                    
-                            <input type="tel" name="tel" placeholder="Telefone" maxlength="20" required>
-                            
-                            <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
-                        
-                            <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
-                            <input class="submittt" type="submit">
-                        </div>
+                           <div class="cad">
+
+                               <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
+                               <input type="tel" name="tel" placeholder="Telefone" maxlength="20" required>
+                               <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
+                               <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
+                            </div> 
+                            <input class="submittt" type="submit"> 
                     </div>
                     
-                    <div class="cad">
+                    <div>
                     <h3>Login</h3>
-                        
-                        <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
-                        
-                        <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
-                        
-                        <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
-                                
-                                <input class="submittt" type="submit">
-                            </div>
-                        </div>
+                       <div class="cad">
+                          <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>                  
+                          <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>   
+                          <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
+                       </div>
+                           <input class="submittt" type="submit">
+                    </div>
+
+                </div>
                     </div>
                     </div>
                 </section>
