@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ponto Digital- Perguntas Frequentes</title>
+    <link rel="stylesheet" href="perguntas.css">
+    <header>
+        <nav>
+            <ul class="top-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Funcionalidades</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Quem somos?</a></li>
+                <li><a href="#">FAC</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="espa"></div>
+        <div id="imag">
+            <img src="img/banner ponto digital.png" alt="Avenida Paulista" class="imagem1">
+            <img src="img/banner ponto digital - Copia.png" alt="" class="imagem1 w3-animate-top">
+            <img src="img/banner ponto digital - Copia (2).png" alt="" class="imagem1">
+        </div>
+        <p id="logo">Ponto digital</p>
+    </header>
+</head>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("imagem1");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000);   
+    }
+</script>
+<body>
+    <h1>Perguntas Frequentes</h1>
+    <section id="perguntas">
+        <div>
+            <img id="foto" src="img/perguntas-png-3.png" alt="Duvidas">  
+        </div>
+        <div class="bla">
+            <div class="qwer">
+                <img id="seta" src="img/icon-ios7-arrow-down-128.png" alt="seta">
+                    <div>
+                    <h2>Como funciona?</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic perferendis inventore debitis animi architecto tempore voluptatibus, nam et est ipsam recusandae consectetur maxime illum repudiandae laborum consequuntur nostrum cum magnam!</p>
+                </div>
+            </div>
+            <div class="qwer">
+                <img id="seta" src="img/icon-ios7-arrow-down-128.png" alt="seta">
+                    <div>
+                    <h2>Quanto custa?</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur illo commodi eos dolores quidem autem. Soluta, assumenda voluptates ipsa fugiat non repellendus neque corrupti modi earum? Quidem, dolor fugiat.</p>
+                </div>
+            </div>
+            <div class="qwer">
+                <img id="seta" src="img/icon-ios7-arrow-down-128.png" alt="seta">
+                    <div>
+                    <h2>Tem acesso em smartphone?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet quis ut expedita temporibus at. Quibusdam totam doloribus consectetur quae excepturi ea corporis officia magni, placeat sunt, temporibus, et blanditiis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contatos">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0658301189687!2d-46.65298398538392!3d-23.566079067650772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552524439656" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="rodape">
+            
+            <address>
+                <p>Agora vai!</p>
+                <p>email.pontodigital@gmail.com</p>
+                <p>Avenida Paulista</p>
+                <p>(11) 1234-5678</p>
+            </address>
+            
+            <div id="oi">
+                <a href="https://www.facebook.com/"><img class="face" src="img/ico_facebook.png" alt=""/></a>
+                <a href="https://www.instagram.com"><img class="pic" src="img/ico_instagram.png" alt=""/></a>
+                <a href="https://twitter.com"><img class="pic" src="img/ico_twitter.png" alt=""/></a>
+            </div>
+            
+            <select id="idiomas">
+                <option value="" disabled selected>Idiomas</option>
+                <option value="ingles">Inglês</option>
+                <option value="espanhol">Espanhol</option>
+                <option value="portugues">Português</option>
+                <option value="frances">Francês</option>
+                <option value="alemao">Alemão</option>
+                <option value="japones">Japones</option>
+            </select>
+            
+        </div>
+    </footer>
+</body>
+</html>

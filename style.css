@@ -4,115 +4,33 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    /* text-align: center; */
 }
 body{
     text-align: center
 }
-.box {
-    height: 100vh;
-    width: 300px;
-    position: absolute;
-    left: -350px;
-    z-index: 1001;
-    background: #005eb9;
-    overflow: hidden;
-    text-align: left;
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-}
-.active {
-    -webkit-transform: translateX(350px);
-    -moz-transform: translateX(350px);
-    -o-transform: translateX(350px);
-    -ms-transform: translateX(350px);
-    transform: translateX(350px);
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+.header-menu{
+    display: none;
 }
 .open-menu {
-    display: inline-block;
-}
-.open-menu button{
-    display: inline;
-    z-index: 0;
-    background: transparent;
-    border: none;
-    margin-top: 10px;
-    margin-right: 90%;
-    padding: 0 60% 0 0;
-    cursor: pointer;
-}
-.open-menu img {
-    width: 30px;
-    height: 30px;
-}
-.header-menu {
-    height: 50px;
-    background: #005eb9;
-	margin-bottom: 200px
-}
-.header-menu button {
-    position: relative;
-    left: 260px;
-    background: transparent;
-    border: none;
-    margin-top: 10px;
-    padding: 0px;
-    cursor: pointer;
-}
-.header-menu img {
-    width: 40px;
-    height: 40px;
+   display: none
 }
 .top-menu{
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* padding: 3.5vh 0 3.5vh 0; */
-    /* width: 100%; */
+    display: flex; 
+    justify-content: space-around;
+    padding: 3.5vh 0 3.5vh 0;
+    width: 100%;
     background-color: black;
-    /* position: fixed; */
-    margin-top: 35px;
+    position: fixed;
 }
 .top-menu a{
-    display: block;
     color: white;
     font-size: 1.6em;
     font-family: 'Sui Generis';
-    line-height: 40px;
-    padding-left: 35px;
-	transition: .2s;
 }
 .top-menu a:hover{
-    display: block;
-    line-height: 40px;
-    padding-left: 35px;
-    transition: .2s;
     color: #005eb9;
-    -webkit-text-stroke-color: white;
-    -webkit-text-stroke-width: 0.5px;
 }
- .bottom-menu {
-    position: absolute;
-    bottom: 0px;
-    width: 300px;
-    background: #005eb9;
-    text-align: center;
-}
-.bottom-menu li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    color: black;
-    font-weight: 700;
-    font-size: 13px;
-} 
-
-button:focus {
-    outline: none;
-}
-/* #espa{ */
+#espa{
     height: 9.8vh;
 }
 .imagem1{
@@ -644,8 +562,105 @@ h3{
         }
     }
     @media screen and (max-width:768px){
+        .box {
+            height: 100vh;
+            width: 300px;
+            position: absolute;
+            left: -350px;
+            z-index: 1001;
+            background: #005eb9;
+            overflow: hidden;
+            text-align: left;
+          -webkit-transition: -webkit-transform 250ms ease-in-out;
+          transition: transform 250ms ease-in-out;
+        }
+        .active {
+            -webkit-transform: translateX(350px);
+            -moz-transform: translateX(350px);
+            -o-transform: translateX(350px);
+            -ms-transform: translateX(350px);
+            transform: translateX(350px);
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+        .open-menu {
+            display: inline-block;
+        }
+        .open-menu button{
+            display: inline;
+            z-index: 0;
+            background: transparent;
+            border: none;
+            margin-top: 10px;
+            margin-right: 90%;
+            padding: 0 60% 0 0;
+            cursor: pointer;
+        }
+        .open-menu img {
+            width: 30px;
+            height: 30px;
+        }
+        .header-menu {
+            display: inline;
+            height: 50px;
+            background: #005eb9;
+            margin-bottom: 200px
+        }
+        .header-menu button {
+            position: relative;
+            left: 260px;
+            background: transparent;
+            border: none;
+            margin-top: 10px;
+            padding: 0px;
+            cursor: pointer;
+        }
+        .header-menu img {
+            width: 40px;
+            height: 40px;
+        }
+        .top-menu{
+            display: block;
+            background-color: black;
+            margin-top: 35px;
+        }
+        .top-menu a{
+            transition: .2s;
+            display: block;
+            color: white;
+            font-size: 1.6em;
+            font-family: 'Sui Generis';
+            line-height: 40px;
+            padding-left: 35px;
+        }
+        .top-menu a:hover{
+            color: #005eb9;
+        }
+         .bottom-menu {
+            position: absolute;
+            bottom: 0px;
+            width: 300px;
+            background: #005eb9;
+            text-align: center;
+        }
+        .bottom-menu li {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            color: black;
+            font-weight: 700;
+            font-size: 13px;
+        } 
+        
+        button:focus {
+            outline: none;
+        }
         .linha{
             width: 40vh
+        }
+        #espa{
+            height: 0vh;
         }
         h1{
             font-size: 2.6em;
