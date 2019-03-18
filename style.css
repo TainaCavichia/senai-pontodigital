@@ -6,7 +6,8 @@
     list-style-type: none;
 }
 body{
-    text-align: center
+    text-align: center;
+    font-family: sans-serif;
 }
 .header-menu{
     display: none;
@@ -213,6 +214,10 @@ h3{
         border-radius: 8px;
         font-family: 'Sui Generis'; 
         font-size: 1.8em;
+        cursor: pointer;
+    }
+    .gerar a{
+        color: white;
     }
     .foto{
         width: 20%;
@@ -574,6 +579,14 @@ h3{
           -webkit-transition: -webkit-transform 250ms ease-in-out;
           transition: transform 250ms ease-in-out;
         }
+        .top-menu{
+            display: none;
+            background-color: black;
+            margin-top: 35px;
+        }
+        .active2{
+            display: block;
+        }
         .active {
             -webkit-transform: translateX(350px);
             -moz-transform: translateX(350px);
@@ -620,11 +633,7 @@ h3{
             width: 40px;
             height: 40px;
         }
-        .top-menu{
-            display: block;
-            background-color: black;
-            margin-top: 35px;
-        }
+        
         .top-menu a{
             transition: .2s;
             display: block;
@@ -728,6 +737,11 @@ h3{
         #cadastro h3{
             margin-bottom: 8%;
         }
+        .bla input{
+            width: 30vh;
+            height: 4vh;
+            margin: 1%;
+        }  
         .submittt{
             margin-top: 12%;
             margin-bottom: 15%;
@@ -872,7 +886,7 @@ h3{
     }
     .cad input{
         height: 4vh;
-        width: 35vh;
+        width: 33vh;
         font-size: 1em;
     }
     .submittt{
