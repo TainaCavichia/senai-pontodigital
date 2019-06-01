@@ -126,101 +126,55 @@ h3{
     justify-content: space-evenly;
     align-items: center;   
 }
+.box .a1{
+    width: 60%;
+    height: 55vh;
+}
 .a1 {
-    box-shadow: 1px 1px black, 
+    box-shadow: 1px 1px 10px black, 
     -1px 1px black,
     1px -1px black,
     -1px -1px black;
-    width: 20%;
-    height: 70vh;
     margin-top: 3%; 
-    border-radius: 20px;
-    
-    }
-    .a1 h4{
-        font-size: 2.2em;
-        padding: 7%;
+    border-radius: 25px;
+    color: black;
+    transition: 0.25s;
+}
+.a1 a h4{
+    font-size: 2em;
+    padding-top:7%; 
         color: #005eb9;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1px;
         font-family: 'Sui Generis';
     }
-    .a1 p{
-        font-size: 1.8em;
-        padding: 6%;
-    }
-    .a2 {
-        box-shadow: 1px 1px black, 
+    .a1:hover{
+        box-shadow: 1px 1px 25px black, 
         -1px 1px black,
         1px -1px black,
         -1px -1px black;
-        width: 20%;
-        height: 70vh;
-        margin-top: 3%; 
-        border-radius: 20px;
     }
-    .a2 h4{
-        font-size: 2.2em;
-        padding: 7%;  
-        color: #005eb9;
-        -webkit-text-stroke-color: black;
-        -webkit-text-stroke-width: 1px;
-        font-family: 'Sui Generis';
+    .a1 a p{
+        font-size: 1.5em;
+        color: black;
     }
-    .a2 p{
-        font-size: 1.8em;
-        padding: 6%;
-    }
-    .a3 {
-        box-shadow: 1px 1px black, 
-        -1px 1px black,
-        1px -1px black,
-        -1px -1px black;
-        width: 20%;
-        height: 70vh;
-        border-radius: 20px;
-        margin-top: 3%; 
-    }
-    .a3 h4{
-        font-size: 2.2em;
-        padding: 7%;  
-        color: #005eb9;
-        -webkit-text-stroke-color: black;
-        -webkit-text-stroke-width: 1px;
-        font-family: 'Sui Generis';
-    }
-    .a3 p{
-        font-size: 1.8em;
-        padding: 6%;
-    }
-    .a4{
+    .box .a4{
+        width: 40%;
+        height: 55vh;
+        margin-top: 5%;
         background:  #005eb9;
-        color: #f2a620;
-        width: 20%;
-        height: 70vh;
-        margin-top: 3%;
-        padding-top: 18vh; 
-        font-size: 3.9em; 
-        border-radius: 20px;
+        border-radius: 25px;
         font-family: 'Sui Generis';
+    }
+    .a4 a p{
+        padding-top: 20%;
+        font-size: 3em;
+        color: #f2a620;
     }
     #spn{
         color: #f2a620;
-        font-size: 2.6em;
+        font-size: 2.3em;
         font-family: 'calibri';
-    }
-    .gerar{
-        background-color: #005eb9;
-        width: 60%;
-        height: 8vh;
-        margin-left: 20%;
-        border-radius: 8px;
-        font-family: 'Sui Generis'; 
-        font-size: 1.8em;
-        cursor: pointer;
-    }
-    .gerar a{
-        color: white;
     }
     .foto{
         width: 20%;
@@ -375,19 +329,7 @@ h3{
         .a1 h4{
             font-size: 2.1em;
         }
-        .a2 h4{
-            font-size: 2.1em;
-        }
-        .a3 h4{
-            font-size: 2.1em;
-        }
         .a1 p{
-            font-size: 1.6em;
-        }
-        .a2 p{
-            font-size: 1.6em;
-        }
-        .a3 p{
             font-size: 1.6em;
         }
     }
@@ -419,14 +361,6 @@ h3{
             width: 40%;
             height: 80vh;
         }
-        .a2{
-            width: 40%;
-            height: 80vh;
-        }
-        .a3{
-            width: 40%;
-            height: 80vh;
-        }
         .a4{
             width: 40%;
             height: 80vh;
@@ -435,25 +369,9 @@ h3{
             font-size: 2.8em;
             padding: 3%;
         }
-        .a2 h4{
-            font-size: 2.8em;
-            padding: 3%;
-        }
-        .a3 h4{
-            font-size: 2.8em;
-            padding: 3%;
-        }
         .a1 p{
             font-size: 1.8em;
             padding: 5%;
-        }
-        .a2 p{
-            padding: 5%;
-            font-size: 1.8em;
-        }
-        .a3 p{
-            padding: 5%;
-            font-size: 1.8em;
         }
         .gerar{ 
             font-size: 1.6em;
@@ -550,19 +468,7 @@ h3{
         .a1 h4{
             font-size: 2.3em;
         }
-        .a2 h4{
-            font-size: 2.3em;
-        }
-        .a3 h4{
-            font-size: 2.3em;
-        }
         .a1{
-            height: 85vh;
-        }
-        .a2{
-            height: 85vh;
-        }
-        .a3{
             height: 85vh;
         }
         .a4{
@@ -691,14 +597,6 @@ h3{
             width: 80%;
             height: 80vh;
         }
-        .a2{
-            width: 80%;
-            height: 80vh;
-        }
-        .a3{
-            width: 80%;
-            height: 80vh;
-        }
         .a4{
             width: 80%;
             height: 80vh;
@@ -707,21 +605,7 @@ h3{
             font-size: 2.6em;
             padding: 4%;
         }
-        .a2 h4{
-            font-size: 2.6em;
-            padding: 4%;
-        }
-        .a3 h4{
-            font-size: 2.6em;
-            padding: 4%;
-        }
         .a1 p{
-            font-size: 1.6em;
-        }
-        .a2 p{
-            font-size: 1.6em;
-        }
-        .a3 p{
             font-size: 1.6em;
         }
         .flexiiii p{
@@ -783,12 +667,6 @@ h3{
         .a1 h4{
             font-size: 2.3em;
         }
-        .a2 h4{
-            font-size: 2.3em;
-        }
-        .a3 h4{
-            font-size: 2.3em;
-        }
         .a4 {
             font-size: 3.4em;
         }
@@ -836,12 +714,6 @@ h3{
             padding: 3vh 3vh;
         }
         .a1 h4{
-            font-size: 2.1em;
-        }
-        .a2 h4{
-            font-size: 2.1em;
-        }
-        .a3 h4{
             font-size: 2.1em;
         }
         .a4 {
@@ -901,5 +773,3 @@ h3{
         font-size: 1em;  
     }
 }
-    
-    
