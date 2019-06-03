@@ -126,8 +126,10 @@ h3{
     justify-content: space-evenly;
     align-items: center;   
 }
+.box{
+    width: 20%;
+}
 .box .a1{
-    width: 60%;
     height: 55vh;
 }
 .a1 {
@@ -135,7 +137,7 @@ h3{
     -1px 1px black,
     1px -1px black,
     -1px -1px black;
-    margin-top: 3%; 
+    margin-top: 10%; 
     border-radius: 25px;
     color: black;
     transition: 0.25s;
@@ -143,6 +145,7 @@ h3{
 .a1 a h4{
     font-size: 2em;
     padding-top:7%; 
+    padding-bottom: 7%;
         color: #005eb9;
         -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1px;
@@ -159,16 +162,14 @@ h3{
         color: black;
     }
     .box .a4{
-        width: 40%;
         height: 55vh;
-        margin-top: 5%;
+        margin-top: 10%;
         background:  #005eb9;
-        border-radius: 25px;
         font-family: 'Sui Generis';
     }
     .a4 a p{
         padding-top: 20%;
-        font-size: 3em;
+        font-size: 4em;
         color: #f2a620;
     }
     #spn{
@@ -357,12 +358,10 @@ h3{
             width: 50%;
             margin-top: 12%;
         }
-        .a1{
+        .box{
             width: 40%;
-            height: 80vh;
         }
-        .a4{
-            width: 40%;
+        .a1{
             height: 80vh;
         }
         .a1 h4{
@@ -476,7 +475,7 @@ h3{
         }
     }
     @media screen and (max-width:768px){
-        .box {
+        .boxe {
             height: 100vh;
             width: 300px;
             position: absolute;
@@ -593,12 +592,10 @@ h3{
         #produto p{
             font-size: 1.5em;
         }
-        .a1{
-            width: 80%;
-            height: 80vh;
+        .box{
+            width: 70%;
         }
-        .a4{
-            width: 80%;
+        .a1{
             height: 80vh;
         }
         .a1 h4{
@@ -607,6 +604,9 @@ h3{
         }
         .a1 p{
             font-size: 1.6em;
+        }
+        .a4{
+            font-size: 1em
         }
         .flexiiii p{
             font-size: 1.5em;
@@ -668,7 +668,7 @@ h3{
             font-size: 2.3em;
         }
         .a4 {
-            font-size: 3.4em;
+            font-size: 1em;
         }
         .gerar{
             font-size: 1.3em;
@@ -715,9 +715,6 @@ h3{
         }
         .a1 h4{
             font-size: 2.1em;
-        }
-        .a4 {
-            font-size: 3em;
         }
         .gerar{
             font-size: 1.1em;
