@@ -1,0 +1,801 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+.header-menu{
+    display: none;
+}
+.open-menu {
+   display: none
+}
+.top-menu{
+    display: flex; 
+    justify-content: space-around;
+    padding: 3.5vh 0 3.5vh 0;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+.top-menu a{
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Sui Generis';
+}
+.top-menu a:hover{
+    color: #005eb9;
+}
+#espa{
+    height: 9.8vh;
+}
+.imagem1{
+    width: 100%;
+    animation: ani 2s linear;
+    z-index: 1;
+}
+#imag{
+    background-color: black;
+
+}
+      @keyframes ani {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    
+.imagem2{
+    width: 100%
+}
+.imagem3{
+    width: 100%
+}
+#logo{
+    width: 100%;
+    background: #ffa700;
+    color:#ffa700;
+    padding: 3vh 0 3vh 15vh;
+}
+h1{
+    font-family: 'Sui Generis';
+    font-size: 3em;
+    padding: 4%;
+    color: #005eb9;
+}
+h2{
+    font-family: 'Sui Generis';
+    font-size: 3em;
+    padding: 4%;
+    color: #005eb9;
+}
+#produto{
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+}
+#produto p{
+    font-size: 1.8em;
+    padding-bottom: 4%;
+    margin-bottom: 5%;
+}
+#funcionamento{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3em;
+    margin-bottom: 5% 
+}
+h3{
+    color: #f2a620;
+    padding-bottom: 3%;
+    font-size: 2em;
+    font-family: 'Sui Generis';
+    align-items: center;
+}
+.bola{
+    padding: 5%;
+}
+.bola p{
+    font-size: 1.3em;
+}
+.imagem{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+.imagens{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+.imagemm{
+    margin-top: 16%;
+    padding-bottom: 9%;
+}
+#planos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+.box{
+    width: 20%;
+}
+.box .a1{
+    height: 55vh;
+}
+.a1 {
+    box-shadow: 1px 1px 10px black, 
+    -1px 1px black,
+    1px -1px black,
+    -1px -1px black;
+    margin-top: 10%; 
+    border-radius: 25px;
+    color: black;
+    transition: 0.25s;
+}
+.a1 a h4{
+    font-size: 2em;
+    padding-top:7%; 
+    padding-bottom: 7%;
+        color: #005eb9;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+        font-family: 'Sui Generis';
+    }
+    .a1:hover{
+        box-shadow: 1px 1px 25px black, 
+        -1px 1px black,
+        1px -1px black,
+        -1px -1px black;
+    }
+    .a1 a p{
+        font-size: 1.5em;
+        color: black;
+    }
+    .box .a4{
+        height: 55vh;
+        margin-top: 10%;
+        background:  #005eb9;
+        font-family: 'Sui Generis';
+    }
+    .a4 a p{
+        padding-top: 20%;
+        font-size: 4em;
+        color: #f2a620;
+    }
+    #spn{
+        color: #f2a620;
+        font-size: 2.3em;
+        font-family: 'calibri';
+    }
+    .foto{
+        width: 20%;
+        height: 20%;
+        border-radius: 30%;
+    }
+    .papa{
+        margin: 5vh 0
+    }
+    #comentarios h2{
+        margin: 15% 0 0 0;
+    }
+    .flexii{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center
+    }
+    .flexiiii{
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+    }
+    .flexiiii p{
+        margin: 0 0 0 5vh;
+        font-size: 2em;
+        text-align: left
+    }
+    .left{
+        padding-left: -5vh
+    }
+    #qwerty{
+        color: #005eb9;
+        font-family: 'Sui Generis'
+    }
+    #SAC h2{
+        margin-top: 13%;
+        margin-bottom: 4%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 1400px;
+        width: 90%;
+        margin: auto;
+    }  
+    .bla input{
+        width: 60vh;
+        height: 6vh;
+        margin: 1%;
+        font-size: 1.3em;
+    }   
+    ::placeholder{
+        text-align: left;
+    }   
+    .submitt{
+        width: 20%;
+        height: 7vh;
+        border-radius: 10px;
+        background-color: #f2a620;
+        font-size: 1.2em;
+        font-family: 'Sui Generis';
+        margin-left: auto;
+        margin-top: 2%;
+        
+    }
+    #quemsomos h2{
+        color: white;
+    } 
+    #quemsomos img{
+        width: 12%;
+        height: 12%;
+        padding: 0 1% 6% 1%; 
+    }  
+    #quemsomos p{
+        font-size: 1.8em;
+        color: white;
+        width: 65%;
+        margin: 0 auto
+    } 
+    #quemsomos{
+        margin: auto;
+        margin-top: 15%;
+        background-color: #005eb9;
+        background-size: cover;
+        padding-bottom: 10%;
+        width: 100%
+    }    
+    #cadastro h2{
+        margin: 5% 0;
+    }   
+    #cadastro h3{
+        font-size: 2.5em;
+    } 
+    .cad input{
+        display: flex;
+        flex-direction: column;
+        height: 6vh;
+        width: 60vh;
+        margin: 3%;
+        font-size: 1.3em;
+    }
+    .amem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1400px;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 15%;
+        
+    }
+    .submittt{
+        border-radius: 10px;
+        background-color: #f2a620;
+        border: none;
+        width: 25vh;
+        height: 6vh;
+        font-family: 'Sui Generis';
+        font-size: 1.2em;  
+        margin-left: 61%;
+    }
+    footer{
+        background-color: #005eb9;
+    }
+    address{
+        font-size: 1.6em;
+        color: white;
+        text-align: left;
+        font-style: normal;
+    }
+    #idiomas{
+        height: 7vh;
+        width: 20%;
+        font-size: 1.3em;
+        font-family: 'Sui Generis';
+        margin: 3%;
+    }
+    #rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%
+    }
+    #oi img{
+        height: 4vh;
+        margin: 0 2vh
+    }
+footer{
+    background-color: #005eb9;
+}
+address{
+    font-size: 1.6em;
+    color: white;
+    text-align: left;
+    font-style: normal;
+}
+#idiomas{
+    height: 7vh;
+    width: 20%;
+    font-size: 1.3em;
+    font-family: 'Sui Generis';
+    margin: 3%;
+}
+#rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%
+}
+#oi img{
+    height: 4vh;
+    margin: 0 2vh
+}
+@media screen and (max-width:1480px){
+    .a1 h4{
+        font-size: 2.1em;
+    }
+    .a1 p{
+        font-size: 1.6em;
+    }
+}
+@media screen and (max-width:1366px){
+    .top-menu a{
+        font-size: 1.3em;
+    }
+    #espa{
+        height: 9.6vh;
+    }
+    .linha{
+        width: 80vh
+    }
+    .bola p{
+        font-size: 1.2em
+    }
+    .imagem{
+        width: 50%;
+    }
+    .imagens{
+        width: 60%;
+        margin-top: 16%;
+    }
+    .imagemm{
+        width: 50%;
+        margin-top: 12%;
+    }
+    .box{
+        width: 40%;
+    }
+    .a1{
+        height: 80vh;
+    }
+    .a1 h4{
+        font-size: 2.8em;
+        padding: 3%;
+    }
+    .a1 p{
+        font-size: 1.8em;
+        padding: 5%;
+    }
+    .gerar{ 
+        font-size: 1.6em;
+    }
+    h3{
+        font-size: 1.8em;
+        align-items: center;
+    }
+    #cadastro h3{
+        margin-bottom: 8%;
+    }
+    .submittt{
+        margin-top: 12%;
+        margin-bottom: 15%;
+    }
+    #comentarios h2{
+        margin: 15% 0 0 0
+    }
+    .flexiiii p{
+        font-size: 1.8em;
+    }
+    .flexii{
+        margin-left: 8%; 
+    }
+    #qwerty{
+        font-size: 1.4em
+    }
+    #quemsomos{
+        padding-top: 5%;
+    }
+    #quemsomos img{
+        width: 15%;
+        height: 15%;
+    }
+    #quemsomos p{
+        font-size: 1.8em;
+        width: 90%;
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .top-menu a{
+        font-size: 1em;
+    }
+    #espa{
+        height: 9vh;
+    }
+    h1{
+        font-size: 2.8em;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    h2{
+        font-size: 2.8em;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .linha{
+        width: 60vh
+    }
+    #produto p{
+        font-size: 1.6;
+    }
+    #funcionamento{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .imagem{
+        width: 30%;
+    }
+    .imagens{
+        width: 40%;
+        margin-top: 16%;
+    }
+    .imagemm{
+        width: 30%;
+        margin-top: 12%;
+    }
+    #quemsomos p{
+        font-size: 1.6em;
+    }
+    .gerar{
+        width: 60%;
+        font-size: 1.5em;
+    }
+    
+}
+@media screen and (max-width:940px){
+    .linha{
+        width: 50vh
+    }
+    .a1 h4{
+        font-size: 2.3em;
+    }
+    .a1{
+        height: 85vh;
+    }
+    .a4{
+        height: 85vh;
+    }
+}
+@media screen and (max-width:768px){
+    .boxe {
+        height: 100vh;
+        width: 300px;
+        position: absolute;
+        left: -350px;
+        z-index: 1001;
+        background: #005eb9;
+        overflow: hidden;
+        text-align: left;
+      -webkit-transition: -webkit-transform 250ms ease-in-out;
+      transition: transform 250ms ease-in-out;
+    }
+    .top-menu{
+        display: none;
+        background-color: black;
+        margin-top: 35px;
+    }
+    .active2{
+        display: block;
+    }
+    .active {
+        -webkit-transform: translateX(350px);
+        -moz-transform: translateX(350px);
+        -o-transform: translateX(350px);
+        -ms-transform: translateX(350px);
+        transform: translateX(350px);
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    .open-menu {
+        display: inline-block;
+    }
+    .open-menu button{
+        display: inline;
+        z-index: 0;
+        background: transparent;
+        border: none;
+        margin-top: 10px;
+        margin-right: 90%;
+        padding: 0 60% 0 0;
+        cursor: pointer;
+    }
+    .open-menu img {
+        width: 30px;
+        height: 30px;
+    }
+    .header-menu {
+        display: inline;
+        height: 50px;
+        background: #005eb9;
+        margin-bottom: 200px
+    }
+    .header-menu button {
+        position: relative;
+        left: 260px;
+        background: transparent;
+        border: none;
+        margin-top: 10px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .header-menu img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .top-menu a{
+        transition: .2s;
+        display: block;
+        color: white;
+        font-size: 1.6em;
+        font-family: 'Sui Generis';
+        line-height: 40px;
+        padding-left: 35px;
+    }
+    .top-menu a:hover{
+        color: #005eb9;
+    }
+     .bottom-menu {
+        position: absolute;
+        bottom: 0px;
+        width: 300px;
+        background: #005eb9;
+        text-align: center;
+    }
+    .bottom-menu li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        color: black;
+        font-weight: 700;
+        font-size: 13px;
+    } 
+    
+    button:focus {
+        outline: none;
+    }
+    .linha{
+        width: 40vh
+    }
+    #espa{
+        height: 0vh;
+    }
+    h1{
+        font-size: 2.6em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    h2{
+        font-size: 2.6em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }  
+    #produto p{
+        font-size: 1.5em;
+    }
+    .box{
+        width: 70%;
+    }
+    .a1{
+        height: 80vh;
+    }
+    .a1 h4{
+        font-size: 2.6em;
+        padding: 4%;
+    }
+    .a1 p{
+        font-size: 1.6em;
+    }
+    .a4{
+        font-size: 1em
+    }
+    .flexiiii p{
+        font-size: 1.5em;
+    }
+    .flexii{
+        margin-left: 8%; 
+    }
+    .foto{
+        width: 22%;
+        height: 22%;
+    }
+    #qwerty{
+        font-size: 1.3em
+    }
+    #cadastro h3{
+        margin-bottom: 8%;
+    }
+    .bla input{
+        width: 30vh;
+        height: 4vh;
+        margin: 1%;
+    }  
+    .submittt{
+        margin-top: 12%;
+        margin-bottom: 15%;
+    }
+    #quemsomos{
+        padding-top: 5%;
+    }
+    #quemsomos p{
+        font-size: 1.4em;
+    }
+    #quemsomos img{
+        width: 20%;
+        height: 20%;
+    }
+    address{
+    font-size: 1.2em;
+    }
+    #idiomas{
+    font-size: 1em;
+    } 
+    #oi img{
+    height: 3.5vh;
+    margin: 0 1vh
+}
+@media screen and (max-width:500px){
+    h1{
+        font-size: 2em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    h2{
+        font-size: 2em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .a1 h4{
+        font-size: 2.3em;
+    }
+    .a4 {
+        font-size: 1em;
+    }
+    .gerar{
+        font-size: 1.3em;
+    }
+    #comentarios h2{
+        margin: 15% 0 0 0
+    }
+    address{
+        font-size: 1.3em;
+        margin-bottom: 5%
+    }
+    #idiomas{
+        width: 30%;
+    }
+}
+@media screen and (max-width:360px){
+    h1{
+        font-size: 2.3em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    h2{
+        font-size: 1.7em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    #produto{
+        margin: 5%;
+    }
+    #produto p{
+        font-size: 1.3em;
+    }
+    .linha{
+        width:25vh
+    }
+    h3{
+        font-size: 1.7em;
+    }
+    .bola p{
+        font-size: 1.1em;
+    }
+    article a{
+        padding: 3vh 3vh;
+    }
+    .a1 h4{
+        font-size: 2.1em;
+    }
+    .gerar{
+        font-size: 1.1em;
+    }
+    .flexiiii p{
+        font-size: 1.4em;
+    }
+    .flexii{
+        margin-left: 8%; 
+    }
+    .foto{
+        width: 25%;
+        height: 25%;
+    }
+    #qwerty{
+        font-size: 1.1em
+    }
+    .bla input{
+        width: 40vh;
+        height: 4vh;
+        margin: 1%;
+    }  
+    .submitt{
+        width: 40%;
+        height: 5vh; 
+        font-size: 1.1em;
+    }
+    #quemsomos{
+        padding-top: 5%;
+    }
+    #quemsomos p{
+        width: 80%
+    }
+    #quemsomos img{
+        width: 25%;
+        height: 25%;
+}
+#cadastro h3{
+    font-size: 1.6em;
+    margin-bottom: 8%;
+}
+.cad input{
+    height: 4vh;
+    width: 33vh;
+    font-size: 1em;
+}
+.submittt{
+    width: 20vh;
+    margin-top: 12%;
+    margin-bottom: 15%;
+    height: 4vh;
+    font-family: 'Sui Generis';
+    font-size: 1em;  
+}
+}
+
+}

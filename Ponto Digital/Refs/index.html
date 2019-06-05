@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <div>
+            <div class="boxe">
+                <div class="container">
+                    <div class="header-menu">
+                        <button><img src="img/multiplication_x_u2715_icon_256x256.png" alt=""></button>
+                    </div>
+                    <nav>
+                        <ul class="top-menu">
+                            <li class="menu-items"> <a href="#">Home</a> </li>
+                            <li class="menu-items"> <a href="#produto">Funcionalidade</a> </li>
+                            <li class="menu-items"> <a href="#plano">Planos</a> </li>
+                            <li class="menu-items"> <a href="#quemsomos">Quem somos?</a> </li>
+                            <li class="menu-items"> <a href="perguntas.html">FAC</a> </li>
+                            <li class="menu-items"> <a href="#contatos">Contatos</a> </li>
+                            <li class="menu-items"> <a href="#cadastro">Cadastro</a> </li>
+                            <li class="menu-items"> <a href="#cadastro">Login</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="open-menu">
+                <button><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png"></button>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+            <script>
+
+            </script>
+
+            <div id="espa"></div>
+            <div id="imag">
+                <img src="img/banner ponto digital.png" alt="" class="imagem1">
+                <img src="img/banner ponto digital - Copia.png" alt="" class="imagem1 w3-animate-top">
+                <img src="img/banner ponto digital - Copia (2).png" alt="" class="imagem1">
+            </div>
+            <p id="logo">Ponto digital</p>
+        </div>
+    </header>
+</head>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("imagem1");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000);
+    }
+</script>
+
+<body>
+    <main>
+        <div>
+            <br><br><br><br>
+            <section id="produto">
+                <h1>Ponto Digital</h1>
+                <p>O Ponto Digital é uma ótima solução quando se trata de funcionários. Com o nosso site você pode
+                    controlar o rendimento do trabalho de cada funcionário em tempo real, e principalmente, a qualquer
+                    hora, no computador, tablet ou smartphone, otimizando assim tempo e dinheiro. </p>
+            </section>
+            <img class="linha" src="img/linha descrição .png" alt="linha">
+            <section id="funcionamento">
+
+                <div class="bola">
+                    <img class="imagens" src="img/Camada 0.png" alt="">
+                    <h3>Eficiente</h3>
+                    <p>Tenha acesso a todas as informações como a hora em que o funcionário começou o trabalho e
+                        finalizou, onde ele bateu o ponto e algumas estatisticas sobre seu rendimento </p>
+                </div>
+
+                <div class="bola">
+                    <img class="imagem" src="img/Camada 01.png" alt="">
+                    <h3>Essencial</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at quae eligendi, voluptatum optio
+                        facere debitis nisi ipsam iure qui harum, dolore culpa nihil consseudyewhyyrywe </p>
+                </div>
+
+                <div class="bola">
+                    <img class="imagemm" src="img/Camada 02.png" alt="">
+                    <h3>Economico</h3>
+                    <p>Economize tempo e dinheiro com acesso em qualquer lugar como computador, tablet e smartphone e a
+                        qualquer hora com a disponibilidade de 100% da Agora vai para você!</p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <h2 id="plano">Conheça nossos planos</h2>
+        <section id="planos">
+            <div class="box">
+                <div class="a1">
+                    <a href="#cadastro">
+                        <h4>Basic</h4>
+                        <p>R$ <span id="spn"> 29,90</span></p>
+                        <p>Ideal para empresas de pequeno porte
+                            <br> Permite gerenciar
+                            até 5 funcionários</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="a1">
+                    <a href="#cadastro">
+                        <h4>Advanced</h4>
+                        <p>R$ <span id="spn">149,90</span></p>
+                        <p>Ideal para empresas de porte médio
+                            <br> Permite gerenciar
+                            até 50 funcionários</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="a1">
+                    <a href="#cadastro">
+                        <h4>Professional</h4>
+                        <p>R$<span id="spn">299,90</span></p>
+                        <p>Ideal para empresas de grande porte
+                            <br> Permite gerenciar
+                            até 300 funcionários</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="a1 a4">
+                    <a href="#cadastro">
+                        <p> Teste grátis por 30 dias!</p>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="comentarios">
+            <h2>Comentários</h2>
+            <div class="flexii">
+                <div>
+                    <div class="papa flexiiii left">
+                        <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
+                        <p> <span id="qwerty"> Julia Maria </span><br><br> Muito íncrivel, excelente!</p>
+                    </div>
+                    <div class="papa flexiiii esquerda">
+                        <img class="foto" src="img/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
+                        <p><span id="qwerty">Gloria Pereira </span> <br><br> Amei o site</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="SAC">
+            <h2>Converse conosco! <br> Deixe seu comentário e tire suas dúvidas aqui</h2>
+
+            <form class="form" action="#" method="POST">
+                <div class="bla">
+                    <input type="text" name="nome" maxlength="50" placeholder="Nome Completo" required>
+                    <input type="tel" name="tel" maxlength="20" placeholder="Telefone" required>
+                </div>
+                <div class="bla">
+                    <input type="e-mail" name="e-mail" maxlength="50" placeholder="E-mail" required>
+                    <input type="text" name="mensagem" maxlength="500" placeholder="Mensagem" required>
+                </div>
+
+                <input class="submitt" type="submit">
+            </form>
+        </section>
+
+        <section id="quemsomos">
+            <h2>Quem somos?</h2>
+            <img src="img/Carlos.png" alt="Carlos Tsukamoto">
+            <img src="img/César.png" alt="César Sportore">
+            <p>A Agora vai nasceu em 2012, com a iniciativa de gerenciar funcionários digitalmente, para acabar com as
+                fraudes ao bater o ponto e ter mais controle, utilizando técnologias modernas. No início era apenas uma
+                ideia sem força, e acabou sendo desenvolvida por dois empreendedores incríveis, César Sportore e Carlos
+                Tsukamoto que foram, ao longo dos anos, construindo nossa equipe de profissionais, que hoje têm orgulho
+                de dizer que são da Agora vai.</p>
+        </section>
+
+        <section id="cadastro">
+            <h2>Faça seu pedido aqui</h2>
+            <div>
+
+                <div class="amem">
+                    <div>
+                        <h3>Cadastre-se</h3>
+                        <div class="cad">
+
+                            <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
+                            <input type="tel" name="tel" placeholder="Telefone" maxlength="20" required>
+                            <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
+                            <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
+                        </div>
+                        <input class="submittt" type="submit">
+                    </div>
+
+                    <div>
+                        <h3 id="login">Login </h3>
+                        <div class="cad">
+                            <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
+                            <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
+                            <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
+                        </div>
+                        <input class="submittt" type="submit">
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <footer id="contatos">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0658301189687!2d-46.65298398538392!3d-23.566079067650772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552524439656"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="rodape">
+
+                <address>
+
+                    <p>Agora vai!</p>
+                    <p>pontodigital@gmail.com</p>
+                    <p>Avenida Paulista</p>
+                    <p>(11) 1234-5678</p>
+                </address>
+
+                <div id="oi">
+                    <a href="https://www.facebook.com/"><img class="face" src="img/ico_facebook.png" alt="" /></a>
+                    <a href="https://www.instagram.com"><img class="pic" src="img/ico_instagram.png" alt="" /></a>
+                    <a href="https://twitter.com"><img class="pic" src="img/ico_twitter.png" alt="" /></a>
+                </div>
+
+                <select id="idiomas">
+                    <option value="" disabled selected>Idiomas</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="espanhol">Espanhol</option>
+                    <option value="portugues">Português</option>
+                    <option value="frances">Francês</option>
+                    <option value="alemao">Alemão</option>
+                    <option value="japones">Japones</option>
+                </select>
+            </div>
+        </footer>
+    </main>
+
+    <body>
+        <ul class="bottom-menu">
+        </ul>
+        </div>
+        </div>
+        <script>
+            $(function () {
+                var box = $('.boxe');
+                var menu = $('.top-menu')
+                var button = $('.open-menu, .header-menu');
+                button.on('click', function () {
+                    box.toggleClass('active');
+                    menu.toggleClass('active2');
+
+                });
+            });
+        </script>
+    </body>
+
+</html>

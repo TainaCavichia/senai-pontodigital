@@ -1,0 +1,33 @@
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\bin\Debug\netcoreapp2.1\PD programado.deps.json
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\bin\Debug\netcoreapp2.1\PD programado.runtimeconfig.json
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\bin\Debug\netcoreapp2.1\PD programado.runtimeconfig.dev.json
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\bin\Debug\netcoreapp2.1\PD programado.dll
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\bin\Debug\netcoreapp2.1\PD programado.pdb
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\bin\Debug\netcoreapp2.1\PD programado.Views.dll
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\bin\Debug\netcoreapp2.1\PD programado.Views.pdb
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.csprojAssemblyReference.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.csproj.CoreCompileInputs.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.RazorAssemblyInfo.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.RazorAssemblyInfo.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.AssemblyInfoInputs.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.AssemblyInfo.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.TagHelpers.input.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.TagHelpers.output.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.RazorCoreGenerate.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.RazorTargetAssemblyInfo.cache
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.RazorTargetAssemblyInfo.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.Views.pdb
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.dll
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.pdb
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.csproj.CopyComplete
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\FAC\Index.g.cshtml.cs
