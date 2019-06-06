@@ -133,24 +133,23 @@
                 <div class="amem">
                     <div>
                         <h3>Cadastre-se</h3>
-                        <div class="cad">
-
+                        <form method="POST" action="Home/Cadastrar" class="cad">
+                            
                             <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
-                            <input type="tel" name="tel" placeholder="Telefone" maxlength="20" required>
-                            <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
+                            <input type="e-mail" name="email" placeholder="E-mail" maxlength="50" required>
                             <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
-                        </div>
-                        <input class="submittt" type="submit">
+                            <input type="date" placeholder= "Data de Nascimento" name="data-nascimento"  required>
+                            <input class="submittt" type="submit" value="Cadastrar">
+                        </form>
                     </div>
 
                     <div>
                         <h3 id="login">Login </h3>
-                        <div class="cad">
-                            <input type="text" name="nome" placeholder="Nome Completo" maxlength="50" required>
+                        <form method="POST" action="Home/Logar" class="cad">
                             <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
                             <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
-                        </div>
-                        <input class="submittt" type="submit">
+                            <input class="submittt" type="submit" value="Logar">
+                        </form>
                     </div>
 
                 </div>

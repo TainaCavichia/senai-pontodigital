@@ -31,3 +31,5 @@ C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-
 C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.pdb
 C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\PD programado.csproj.CopyComplete
 C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\FAC\Index.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Sucesso.g.cshtml.cs
+C:\Users\46748080819\Documents\coisas-velhas\Ponto Digital_ferrou\projeto\senai-pontodigital\Ponto Digital\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Erro.g.cshtml.cs

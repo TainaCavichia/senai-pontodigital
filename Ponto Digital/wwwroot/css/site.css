@@ -69,7 +69,6 @@ body{
 }
 h1{
     font-family: 'Sui Generis';
-    font-size: 3em;
     padding: 4%;
     color: #005eb9;
 }
@@ -209,7 +208,7 @@ h3{
         padding-left: -5vh
     }
     #qwerty{
-        color: #005eb9;
+        color: #eaf1f8;
         font-family: 'Sui Generis'
     }
     #SAC h2{
@@ -243,6 +242,9 @@ h3{
         margin-top: 2%;
         
     }
+    .submitt:hover{
+        background-color:#005eb9;
+    }
     #quemsomos h2{
         color: white;
     } 
@@ -271,13 +273,15 @@ h3{
     #cadastro h3{
         font-size: 2.5em;
     } 
-    .cad input{
+    .cad{
         display: flex;
         flex-direction: column;
+    }
+    .cad input{
         height: 6vh;
         width: 60vh;
         margin: 3%;
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .amem{
         display: flex;
@@ -298,6 +302,9 @@ h3{
         font-family: 'Sui Generis';
         font-size: 1.2em;  
         margin-left: 61%;
+    }
+    .submittt:hover{
+        background-color: #005eb9;
     }
     footer{
         background-color: #005eb9;
