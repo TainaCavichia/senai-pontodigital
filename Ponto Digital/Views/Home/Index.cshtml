@@ -1,4 +1,8 @@
-   <main>
+@{
+var user = (string) ViewData["User"];
+}
+
+    <main>
         <div>
             <br><br><br><br>
             <section id="produto">
@@ -145,8 +149,8 @@
 
                     <div>
                         <h3 id="login">Login </h3>
-                        <form method="POST" action="Home/Logar" class="cad">
-                            <input type="e-mail" name="e-mail" placeholder="E-mail" maxlength="50" required>
+                        <form method="POST" action='@Url.Action("Login","Home")' class="cad">
+                            <input type="e-mail" name="email" placeholder="E-mail" maxlength="50" required>
                             <input type="password" name="senha" placeholder="Senha" maxlength="10" required>
                             <input class="submittt" type="submit" value="Logar">
                         </form>

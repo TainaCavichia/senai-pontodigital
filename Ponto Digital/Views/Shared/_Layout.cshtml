@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+var user = (string) ViewData["User"];
+}
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
@@ -24,7 +28,13 @@
                             <li class="menu-items"> <a id="bt_FAC" asp-controller="FAC" asp-action="Index">FAC</a> </li>
                             <li class="menu-items"> <a href='@Url.Action("Index","Home")#contatos'>Contatos</a> </li>
                             <li class="menu-items"> <a href='@Url.Action("Index","Home")#cadastro'>Cadastro</a> </li>
-                            <li class="menu-items"> <a href='@Url.Action("Index","Home")#cadastro'>Login</a> </li>
+                        
+                        @if (string.IsNullOrEmpty(user))
+                        {
+                            <li class="menu-items"><a href='@Url.Action("Index","Home")#cadastro'>Login</a> </li> 
+                        }else{
+                            <li><a id="bt_logout" asp-controller="Home" asp-action="Logout">Logout</a></li>
+                        }
                         </ul>
                     </nav>
                 </div>
