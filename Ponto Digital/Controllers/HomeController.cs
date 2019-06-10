@@ -8,18 +8,24 @@ using Microsoft.AspNetCore.Mvc;
 using PD_programado.Models;
 using Ponto_Digital.Models;
 using Ponto_Digital.Repositorio;
+using Ponto_Digital.ViewModel;
 
 namespace PD_programado.Controllers {
     public class HomeController : Controller {
         UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio ();
+        ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
 
         private const string SESSION_EMAIL = "_EMAIL";
         private const string SESSION_USUARIO = "_USUARIO";
 
         [HttpGet]
         public IActionResult Index () {
+
+            ComentarioViewModel comentario = new ComentarioViewModel ();
+            comentario.Comentarios = comentarioRepositorio.ListarComentarios();    
+
             ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
-            return View ();
+            return View (comentario);
         }
         public IActionResult Cadastrar (IFormCollection form) {
             string Nome = form["nome"];
@@ -65,6 +71,25 @@ namespace PD_programado.Controllers {
             HttpContext.Session.Remove (SESSION_USUARIO);
             HttpContext.Session.Clear ();
             return RedirectToAction ("Index", "Home");
+        }
+        public IActionResult Comentar(IFormCollection form){
+            string Mensagem = form["mensagem"];
+
+            if (!string.IsNullOrEmpty(Mensagem)){
+                ComentarioModel comentarioModel = new ComentarioModel();
+                comentarioModel.NomeUsuario = HttpContext.Session.GetString(SESSION_USUARIO);
+                comentarioModel.DataComentario = DateTime.Now;
+                comentarioModel.Mensagem = Mensagem;
+                comentarioModel.Status = "Aguardando";
+                comentarioRepositorio.CadastrarNoCSV(comentarioModel);
+
+                ViewData["Controller"] = "Cadastro de comentário";
+                return View("_Sucesso");
+
+            } else {
+                ViewData["Controller"] = "Cadastro de comentário";
+                return View ("_Erro");
+            }
         }
     }
 }

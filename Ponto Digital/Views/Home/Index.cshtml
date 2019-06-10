@@ -1,3 +1,5 @@
+@model Ponto_Digital.ViewModel.ComentarioViewModel
+
 @{
 var user = (string) ViewData["User"];
 }
@@ -84,39 +86,38 @@ var user = (string) ViewData["User"];
             </div>
 
         </section>
-
-
+        
         <section id="comentarios">
             <h2>Comentários</h2>
-            <div class="flexii">
-                <div>
-                    <div class="papa flexiiii left">
-                        <img class="foto" src="images/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
-                        <p> <span id="qwerty"> Julia Maria </span><br><br> Muito íncrivel, excelente!</p>
-                    </div>
-                    <div class="papa flexiiii esquerda">
-                        <img class="foto" src="images/20190301-gloria-maria-2018-220171204_0003.jpg" alt="">
-                        <p><span id="qwerty">Gloria Pereira </span> <br><br> Amei o site</p>
-                    </div>
-                </div>
+            <div class="COMENTARIO">
+            @foreach (var item in Model.Comentarios) {
+            <div class="caixa">
+            <br>
+            <p class="nome">@item.NomeUsuario</p>
+            <p>@item.Mensagem</p>
+            <p>@item.DataComentario</p>
+            <br>
+            </div>
+            }                
             </div>
         </section>
 
         <section id="SAC">
+            @if(string.IsNullOrEmpty(user)){
+                <h2>SAC</h2>
+                <p>Para deixar um comentário faça login no site</p>
+            }
+            @if(!string.IsNullOrEmpty(user)){
             <h2>Converse conosco! <br> Deixe seu comentário e tire suas dúvidas aqui</h2>
 
-            <form class="form" action="#" method="POST">
+            <form class="form" action="Home/Comentar" method="POST">
                 <div class="bla">
-                    <input type="text" name="nome" maxlength="50" placeholder="Nome Completo" required>
-                    <input type="tel" name="tel" maxlength="20" placeholder="Telefone" required>
-                </div>
-                <div class="bla">
-                    <input type="e-mail" name="e-mail" maxlength="50" placeholder="E-mail" required>
                     <input type="text" name="mensagem" maxlength="500" placeholder="Mensagem" required>
                 </div>
-
                 <input class="submitt" type="submit">
             </form>
+                
+            }
         </section>
 
         <section id="quemsomos">

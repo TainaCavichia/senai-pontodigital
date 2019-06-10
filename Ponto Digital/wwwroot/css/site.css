@@ -187,33 +187,34 @@ h3{
     #comentarios h2{
         margin: 15% 0 0 0;
     }
-    .flexii{
+    .COMENTARIO{
         display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-    .flexiiii{
-        display: flex;
-        justify-content: left;
-        flex-direction: row;
-        align-items: center;
+    .caixa{
+        border-radius: 2vh;
+        width: 40%;
+        margin-top: 5vh;
+        padding-left: 3%; 
+        box-shadow: 1px 1px 10px black, 
+        -1px 1px black,
+        1px -1px black,
+        -1px -1px black;
     }
-    .flexiiii p{
-        margin: 0 0 0 5vh;
-        font-size: 2em;
-        text-align: left
+    .nome{
+        font-family: 'Sui Generis';
     }
-    .left{
-        padding-left: -5vh
-    }
-    #qwerty{
-        color: #eaf1f8;
-        font-family: 'Sui Generis'
+    .caixa p {
+        text-align: left;
+        font-size: 1.2em;
     }
     #SAC h2{
         margin-top: 13%;
-        margin-bottom: 4%;
+        margin-bottom: 3%;
+    }
+    #SAC p{
+        font-size: 1.8em;
     }
     .form{
         display: flex;
