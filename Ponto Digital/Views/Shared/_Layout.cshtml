@@ -1,5 +1,6 @@
 ﻿@{
 var user = (string) ViewData["User"];
+var tipo = (string) ViewData["Tipo"];
 }
 
 <!DOCTYPE html>
@@ -22,15 +23,22 @@ var user = (string) ViewData["User"];
                     <nav>
                         <ul class="top-menu">
                             <li class="menu-items"> <a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
+                            @if(string.IsNullOrEmpty(tipo)){
+
                             <li class="menu-items"> <a href='@Url.Action("Index","Home")#produto'>Funcionalidade</a> </li>
                             <li class="menu-items"> <a href='@Url.Action("Index","Home")#plano'>Planos</a> </li>
                             <li class="menu-items"> <a href='@Url.Action("Index","Home")#quemsomos'>Quem somos?</a> </li>
                             <li class="menu-items"> <a id="bt_FAC" asp-controller="FAC" asp-action="Index">FAC</a> </li>
                             <li class="menu-items"> <a href='@Url.Action("Index","Home")#contatos'>Contatos</a> </li>
-                            <li class="menu-items"> <a href='@Url.Action("Index","Home")#cadastro'>Cadastro</a> </li>
+                            
+                            }else if(!string.IsNullOrEmpty(tipo)){
+                            <li class="menu-items"> <a href="#">Dashboard</a> </li>
+                            <li class="menu-items"> <a href="#">Comentários</a> </li>
+                            }
                         
                         @if (string.IsNullOrEmpty(user))
                         {
+                            <li class="menu-items"> <a href='@Url.Action("Index","Home")#cadastro'>Cadastro</a> </li>
                             <li class="menu-items"><a href='@Url.Action("Index","Home")#cadastro'>Login</a> </li> 
                         }else{
                             <li><a id="bt_logout" asp-controller="Home" asp-action="Logout">Logout</a></li>

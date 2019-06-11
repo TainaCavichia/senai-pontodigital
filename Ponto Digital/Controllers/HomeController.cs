@@ -15,6 +15,7 @@ namespace PD_programado.Controllers {
         UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio ();
         ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
 
+        private const string SESSION_TIPO = "_TIPO";
         private const string SESSION_EMAIL = "_EMAIL";
         private const string SESSION_USUARIO = "_USUARIO";
 
@@ -22,8 +23,10 @@ namespace PD_programado.Controllers {
         public IActionResult Index () {
 
             ComentarioViewModel comentario = new ComentarioViewModel ();
-            comentario.Comentarios = comentarioRepositorio.ListarComentarios();    
+            comentario.Comentarios = comentarioRepositorio.ListarComentarios();   
 
+            ViewData["Controller"] = HttpContext.Session.GetString(SESSION_USUARIO);
+            ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
             ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
             return View (comentario);
         }
@@ -59,16 +62,27 @@ namespace PD_programado.Controllers {
             if (Usuario != null && Usuario.Email.Equals (email) && Usuario.Senha.Equals (senha)) {
                 HttpContext.Session.SetString (SESSION_EMAIL, email);
                 HttpContext.Session.SetString (SESSION_USUARIO, Usuario.Nome);
+                ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
+                ViewData["Controller"] = HttpContext.Session.GetString(SESSION_USUARIO);
+
+                if (Usuario.TipoDeUsuario.Equals("Administrador"))
+                {
+                    HttpContext.Session.SetString (SESSION_TIPO, "Administrador");
+                    ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
+                    return View("_Sucesso");
+                    
+                }else if(Usuario.TipoDeUsuario.Equals("Comum")){
+                    
+                    return View("_Sucesso");
+                }
             }
-
-
-            ViewData["Controller"] = HttpContext.Session.GetString (SESSION_USUARIO);
             return RedirectToAction("Index","Home");
 
         }
         public IActionResult Logout () {
             HttpContext.Session.Remove (SESSION_EMAIL);
             HttpContext.Session.Remove (SESSION_USUARIO);
+            HttpContext.Session.Remove (SESSION_TIPO);
             HttpContext.Session.Clear ();
             return RedirectToAction ("Index", "Home");
         }
@@ -83,11 +97,11 @@ namespace PD_programado.Controllers {
                 comentarioModel.Status = "Aguardando";
                 comentarioRepositorio.CadastrarNoCSV(comentarioModel);
 
-                ViewData["Controller"] = "Cadastro de comentário";
+                ViewData["Controller"] = "Comentário";
                 return View("_Sucesso");
 
             } else {
-                ViewData["Controller"] = "Cadastro de comentário";
+                ViewData["Controller"] = "Comentário";
                 return View ("_Erro");
             }
         }

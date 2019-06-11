@@ -11,8 +11,11 @@ namespace Ponto_Digital.Repositorio {
             } else {
                 usuario.Id = 1;
             }
+
+            usuario.TipoDeUsuario = "Comum";
+
             StreamWriter sw = new StreamWriter ("Database/Usuarios.csv", true);
-            sw.WriteLine ($"id={usuario.Id};nome={usuario.Nome};email={usuario.Email};senha={usuario.Senha};data-nascimento={usuario.DataDeNascimento}");
+            sw.WriteLine ($"id={usuario.Id};nome={usuario.Nome};email={usuario.Email};senha={usuario.Senha};data-nascimento={usuario.DataDeNascimento};tipousuario={usuario.TipoDeUsuario}");
             sw.Close ();
 
             return usuario;
@@ -24,6 +27,7 @@ namespace Ponto_Digital.Repositorio {
             usuario.Email = ExtrairCampo("email", registro);
             usuario.Senha = ExtrairCampo("senha", registro);
             usuario.DataDeNascimento = DateTime.Parse(ExtrairCampo("data-nascimento", registro));
+            usuario.TipoDeUsuario = ExtrairCampo("tipousuario", registro);
 
             return usuario;
         }

@@ -9,5 +9,6 @@ namespace Ponto_Digital.Models
         public string Email {get;set;}
         public string Senha {get;set;}
         public DateTime DataDeNascimento {get;set;}
+        public string TipoDeUsuario {get;set;}
     }
 }
