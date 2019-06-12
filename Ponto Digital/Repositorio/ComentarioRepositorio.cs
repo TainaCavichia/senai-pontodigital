@@ -41,5 +41,27 @@ namespace Ponto_Digital.Repositorio
                  }
                 return listaDeComentarios;
         }
+           public ComentarioModel ObterPor (int id) {
+
+            foreach (var item in LerCSV (PATH)) {
+                if (id.Equals (ExtrairCampo (id.ToString(), item))) {
+                    return ConverterEmObjeto (item);
+                }
+            }
+            return null;
+        }
+        public ComentarioModel EditarNoCSV(ComentarioModel comentario){
+            string[] linhas = LerCSV(PATH);
+            for (int i = 0; i < linhas.Length; i++)
+            {
+                string[] linha = linhas[i].Split(";");
+                if (comentario.Id.ToString().Equals(linha[0]))
+                {
+                    linha[i] = $"id={comentario.Id};nome={comentario.NomeUsuario};data-comentario={comentario.DataComentario};mensagem={comentario.Mensagem};status={comentario.Status}";
+                }
+            }
+            File.WriteAllLines(PATH, linhas);
+            return comentario;
+        }
     }
 }

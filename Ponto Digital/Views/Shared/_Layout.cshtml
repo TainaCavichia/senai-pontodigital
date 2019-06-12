@@ -33,7 +33,7 @@ var tipo = (string) ViewData["Tipo"];
                             
                             }else if(!string.IsNullOrEmpty(tipo)){
                             <li class="menu-items"> <a href="#">Dashboard</a> </li>
-                            <li class="menu-items"> <a href="#">Comentários</a> </li>
+                            <li class="menu-items"> <a href='@Url.Action("Index","Home")#comentarios'>Comentários</a> </li>
                             }
                         
                         @if (string.IsNullOrEmpty(user))

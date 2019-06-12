@@ -14,6 +14,7 @@ namespace PD_programado.Controllers {
     public class HomeController : Controller {
         UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio ();
         ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
+        ComentarioModel comentarioModel = new ComentarioModel();
 
         private const string SESSION_TIPO = "_TIPO";
         private const string SESSION_EMAIL = "_EMAIL";
@@ -90,7 +91,6 @@ namespace PD_programado.Controllers {
             string Mensagem = form["mensagem"];
 
             if (!string.IsNullOrEmpty(Mensagem)){
-                ComentarioModel comentarioModel = new ComentarioModel();
                 comentarioModel.NomeUsuario = HttpContext.Session.GetString(SESSION_USUARIO);
                 comentarioModel.DataComentario = DateTime.Now;
                 comentarioModel.Mensagem = Mensagem;
@@ -104,6 +104,25 @@ namespace PD_programado.Controllers {
                 ViewData["Controller"] = "Comentário";
                 return View ("_Erro");
             }
+        }
+        [HttpGet]
+        public IActionResult Aprovar(int id){
+            ComentarioModel comentarioRecuperado = comentarioRepositorio.ObterPor(id);
+            if(comentarioRecuperado != null && comentarioRecuperado.Equals(id)){
+                comentarioModel.Status = "Aprovado";
+            }
+            comentarioRepositorio.EditarNoCSV(comentarioModel);
+            return View();
+        }
+        [HttpGet]
+         public IActionResult Rejeitar(int id){
+             ComentarioModel comentarioRecuperado = comentarioRepositorio.ObterPor(id);
+            if(comentarioRecuperado.Equals(id)){
+                comentarioModel.Status = "Rejeitado";
+            }
+            comentarioRepositorio.EditarNoCSV(comentarioModel);
+                
+            return View();
         }
     }
 }

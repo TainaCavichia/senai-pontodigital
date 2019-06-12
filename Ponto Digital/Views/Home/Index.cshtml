@@ -2,6 +2,7 @@
 
 @{
 var user = (string) ViewData["User"];
+var tipo = (string) ViewData["Tipo"];
 }
 
     <main>
@@ -89,17 +90,23 @@ var user = (string) ViewData["User"];
         
         <section id="comentarios">
             <h2>Comentários</h2>
-            <div class="COMENTARIO">
-            @foreach (var item in Model.Comentarios) {
-            <div class="caixa">
-            <br>
-            <p class="nome">@item.NomeUsuario</p>
-            <p>@item.Mensagem</p>
-            <p>@item.DataComentario</p>
-            <br>
-            </div>
+            @if(string.IsNullOrEmpty(tipo)){
+              <p>Os comentarios não são visíveis para usuários comuns</p>
+                }else if(!string.IsNullOrEmpty(tipo)){
+                <div class="COMENTARIO">
+                    @foreach (var item in Model.Comentarios) {
+                    <div class="caixa">
+                    <br>
+                    <p class="nome">@item.NomeUsuario</p>
+                    <p>@item.Mensagem</p>
+                    <p>@item.DataComentario</p>
+                    <br>
+                    <a href="Home/Aprovar?id=@item.Id">Aprovado</a>
+                    <a href="Home/Rejeitar?id=@item.Id">Rejeitado</a>
+                    </div>
+                    }
+                </div>
             }                
-            </div>
         </section>
 
         <section id="SAC">
