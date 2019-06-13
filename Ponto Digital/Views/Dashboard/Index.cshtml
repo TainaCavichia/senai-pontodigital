@@ -1,0 +1,50 @@
+@model Ponto_Digital.ViewModel.ComentarioViewModel
+
+@{
+var user = (string) ViewData["User"];
+var tipo = (string) ViewData["Tipo"];
+}
+<section id="listagemComentarios">
+    <h2>Últimos comentários</h2>
+    @foreach (var item in Model.Comentarios)
+    {
+        <div class="caixa">
+        <br>
+        <p class="nome">@item.NomeUsuario</p>
+        <p>@item.Mensagem</p>
+        <p>@item.DataComentario</p>
+        <br>
+        </div>
+    }
+</section>
+<section>
+    <h2>Últimos usuários cadastrados</h2>
+    @foreach (var item in Model.Usuarios)
+    {
+        <div class="caixa">
+            <br>
+            <p>Nome: @item.Nome</p>
+            <p>Email: @item.Email</p>
+            <p>Senha: @item.Senha</p>
+            <p>Data de Nascimento: @item.DataDeNascimento</p>
+            <p>Tipo de Usuário: @item.TipoDeUsuario</p>
+            <br>
+        </div>
+    }
+</section>
+<section>
+    <h2>Quantidade de usuários cadastrados</h2>
+
+</section>
+<section>
+    <h2>Quantidade de comentários</h2>
+
+</section>
+<section>
+    <h2>Quantidade de comentários aprovados</h2>
+
+</section>
+<section>
+    <h2>Quantidade de comentários rejeitados</h2>
+
+</section>

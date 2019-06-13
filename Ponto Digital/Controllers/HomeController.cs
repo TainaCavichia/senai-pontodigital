@@ -15,6 +15,7 @@ namespace PD_programado.Controllers {
         UsuarioRepositorio usuarioRepositorio = new UsuarioRepositorio ();
         ComentarioRepositorio comentarioRepositorio = new ComentarioRepositorio();
         ComentarioModel comentarioModel = new ComentarioModel();
+        ComentarioViewModel comentario = new ComentarioViewModel ();
 
         private const string SESSION_TIPO = "_TIPO";
         private const string SESSION_EMAIL = "_EMAIL";
@@ -23,8 +24,8 @@ namespace PD_programado.Controllers {
         [HttpGet]
         public IActionResult Index () {
 
-            ComentarioViewModel comentario = new ComentarioViewModel ();
-            comentario.Comentarios = comentarioRepositorio.ListarComentarios();   
+            comentario.Comentarios = comentarioRepositorio.ListarComentarios(); 
+            comentario.ComentariosAprovados = comentarioRepositorio.ListarComentariosAprovados();  
 
             ViewData["Controller"] = HttpContext.Session.GetString(SESSION_USUARIO);
             ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
@@ -108,21 +109,27 @@ namespace PD_programado.Controllers {
         [HttpGet]
         public IActionResult Aprovar(int id){
             ComentarioModel comentarioRecuperado = comentarioRepositorio.ObterPor(id);
-            if(comentarioRecuperado != null && comentarioRecuperado.Equals(id)){
-                comentarioModel.Status = "Aprovado";
+            if(comentarioRecuperado != null && comentarioRecuperado.Id.Equals(id)){
+                comentarioRecuperado.Status = "Aprovado";
             }
-            comentarioRepositorio.EditarNoCSV(comentarioModel);
-            return View();
+            comentarioRepositorio.EditarNoCSV(comentarioRecuperado);
+            ViewData["Controller"] = "Aprovação";
+            ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
+            ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
+            return View("_Sucesso");
         }
         [HttpGet]
          public IActionResult Rejeitar(int id){
              ComentarioModel comentarioRecuperado = comentarioRepositorio.ObterPor(id);
-            if(comentarioRecuperado.Equals(id)){
-                comentarioModel.Status = "Rejeitado";
+            if(comentarioRecuperado.Id.Equals(id)){
+                comentarioRecuperado.Status = "Rejeitado";
             }
-            comentarioRepositorio.EditarNoCSV(comentarioModel);
+            comentarioRepositorio.EditarNoCSV(comentarioRecuperado);
                 
-            return View();
+            ViewData["Controller"] = "Rejeição";
+            ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
+            ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
+            return View("_Sucesso");
         }
     }
 }

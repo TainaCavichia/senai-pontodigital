@@ -5,16 +5,18 @@ using Ponto_Digital.Models;
 
 namespace Ponto_Digital.Repositorio {
     public class UsuarioRepositorio : BaseRepository {
+         private const string PATH = "Database/Usuarios.csv";
+         List<UsuarioModel> listaDeUsuarios = new List<UsuarioModel>();
         public UsuarioModel CadastrarNoCSV (UsuarioModel usuario) {
-            if (File.Exists ("Database/Usuarios.csv")) {
-                usuario.Id = File.ReadAllLines ("Database/Usuarios.csv").Length + 1;
+            if (File.Exists (PATH)) {
+                usuario.Id = File.ReadAllLines (PATH).Length + 1;
             } else {
                 usuario.Id = 1;
             }
 
             usuario.TipoDeUsuario = "Comum";
 
-            StreamWriter sw = new StreamWriter ("Database/Usuarios.csv", true);
+            StreamWriter sw = new StreamWriter (PATH, true);
             sw.WriteLine ($"id={usuario.Id};nome={usuario.Nome};email={usuario.Email};senha={usuario.Senha};data-nascimento={usuario.DataDeNascimento};tipousuario={usuario.TipoDeUsuario}");
             sw.Close ();
 
@@ -40,6 +42,16 @@ namespace Ponto_Digital.Repositorio {
                 }
             }
             return null;
+        }
+          public List<UsuarioModel> ListarUsuarios(){
+                 var linhas = LerCSV (PATH);
+                 foreach (var item in linhas)
+                 {
+                     UsuarioModel usuario = ConverterEmObjeto(item);
+                    
+                    this.listaDeUsuarios.Add(usuario);
+                 }
+                return listaDeUsuarios;
         }
     
     }

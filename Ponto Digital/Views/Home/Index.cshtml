@@ -91,7 +91,16 @@ var tipo = (string) ViewData["Tipo"];
         <section id="comentarios">
             <h2>Comentários</h2>
             @if(string.IsNullOrEmpty(tipo)){
-              <p>Os comentarios não são visíveis para usuários comuns</p>
+                foreach (var item in Model.ComentariosAprovados)
+                {
+                    <div class="caixa">
+                    <br>
+                    <p class="nome">@item.NomeUsuario</p>
+                    <p>@item.Mensagem</p>
+                    <p>@item.DataComentario</p>
+                    <br>
+                    </div>
+                }
                 }else if(!string.IsNullOrEmpty(tipo)){
                 <div class="COMENTARIO">
                     @foreach (var item in Model.Comentarios) {
@@ -100,9 +109,8 @@ var tipo = (string) ViewData["Tipo"];
                     <p class="nome">@item.NomeUsuario</p>
                     <p>@item.Mensagem</p>
                     <p>@item.DataComentario</p>
-                    <br>
-                    <a href="Home/Aprovar?id=@item.Id">Aprovado</a>
-                    <a href="Home/Rejeitar?id=@item.Id">Rejeitado</a>
+                    <a href="Home/Aprovar?id=@item.Id">Aprovar</a>
+                    <a href="Home/Rejeitar?id=@item.Id">Rejeitar</a>
                     </div>
                     }
                 </div>
