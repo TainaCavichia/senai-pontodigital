@@ -6,7 +6,8 @@ var tipo = (string) ViewData["Tipo"];
 }
 <section id="listagemComentarios">
     <h2>Últimos comentários</h2>
-    @foreach (var item in Model.Comentarios)
+    <div class="COMENTARIO">
+    @foreach (var item in Model.UltimosComentarios)
     {
         <div class="caixa">
         <br>
@@ -16,10 +17,12 @@ var tipo = (string) ViewData["Tipo"];
         <br>
         </div>
     }
+    </div>
 </section>
 <section>
     <h2>Últimos usuários cadastrados</h2>
-    @foreach (var item in Model.Usuarios)
+    <div class="COMENTARIO">
+    @foreach (var item in Model.UltimosUsuarios)
     {
         <div class="caixa">
             <br>
@@ -31,20 +34,21 @@ var tipo = (string) ViewData["Tipo"];
             <br>
         </div>
     }
+    </div>
 </section>
 <section>
     <h2>Quantidade de usuários cadastrados</h2>
-
+        <p class="numero">@Model.QuantidadeUsuarios</p>
 </section>
 <section>
     <h2>Quantidade de comentários</h2>
-
+        <p class="numero">@Model.QuantidadeComentarios</p>
 </section>
 <section>
     <h2>Quantidade de comentários aprovados</h2>
-
+        <p class="numero">@Model.QuantidadeAprovados</p>
 </section>
 <section>
     <h2>Quantidade de comentários rejeitados</h2>
-
+        <p class="numero">@Model.QuantidadeRejeitados</p>
 </section>

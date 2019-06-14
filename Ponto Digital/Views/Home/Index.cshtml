@@ -91,16 +91,17 @@ var tipo = (string) ViewData["Tipo"];
         <section id="comentarios">
             <h2>Comentários</h2>
             @if(string.IsNullOrEmpty(tipo)){
-                foreach (var item in Model.ComentariosAprovados)
-                {
-                    <div class="caixa">
-                    <br>
-                    <p class="nome">@item.NomeUsuario</p>
-                    <p>@item.Mensagem</p>
-                    <p>@item.DataComentario</p>
-                    <br>
-                    </div>
-                }
+                <div class="COMENTARIO">
+                    @foreach (var item in Model.ComentariosAprovados) {
+                        <div class="caixa">
+                        <br>
+                        <p class="nome">@item.NomeUsuario</p>
+                        <p>@item.Mensagem</p>
+                        <p>@item.DataComentario</p>
+                        <br>
+                        </div>
+                    }
+                </div>
                 }else if(!string.IsNullOrEmpty(tipo)){
                 <div class="COMENTARIO">
                     @foreach (var item in Model.Comentarios) {
@@ -147,9 +148,13 @@ var tipo = (string) ViewData["Tipo"];
         </section>
 
         <section id="cadastro">
+            @if(!string.IsNullOrEmpty(user)){
+                <h2>Obrigado por se cadastrar em nosso site</h2>
+            }
+            @if (string.IsNullOrEmpty(user))
+            {
             <h2>Faça seu pedido aqui</h2>
             <div>
-
                 <div class="amem">
                     <div>
                         <h3>Cadastre-se</h3>
@@ -174,6 +179,6 @@ var tipo = (string) ViewData["Tipo"];
 
                 </div>
             </div>
-            </div>
+            }
         </section>
    </main>

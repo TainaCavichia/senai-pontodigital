@@ -26,6 +26,8 @@ namespace PD_programado.Controllers {
 
             comentario.Comentarios = comentarioRepositorio.ListarComentarios(); 
             comentario.ComentariosAprovados = comentarioRepositorio.ListarComentariosAprovados();  
+            comentario.Comentarios.Reverse();
+            comentario.ComentariosAprovados.Reverse();
 
             ViewData["Controller"] = HttpContext.Session.GetString(SESSION_USUARIO);
             ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
@@ -47,11 +49,11 @@ namespace PD_programado.Controllers {
                 usuario.DataDeNascimento = DataDeNascimento;
                 usuarioRepositorio.CadastrarNoCSV (usuario);
 
-                ViewData["Controller"] = "Cadastro";
+                ViewData["Controller"] = "Cadastro efetuado";
                 return View ("_Sucesso");
 
             } else {
-                ViewData["Controller"] = "Cadastro";
+                ViewData["Controller"] = "Cadastro não foi efetuado";
                 return View ("_Erro");
             }
         }
@@ -98,11 +100,11 @@ namespace PD_programado.Controllers {
                 comentarioModel.Status = "Aguardando";
                 comentarioRepositorio.CadastrarNoCSV(comentarioModel);
 
-                ViewData["Controller"] = "Comentário";
+                ViewData["Controller"] = "Comentário enviado";
                 return View("_Sucesso");
 
             } else {
-                ViewData["Controller"] = "Comentário";
+                ViewData["Controller"] = "Comentário não foi enviado";
                 return View ("_Erro");
             }
         }
@@ -113,7 +115,7 @@ namespace PD_programado.Controllers {
                 comentarioRecuperado.Status = "Aprovado";
             }
             comentarioRepositorio.EditarNoCSV(comentarioRecuperado);
-            ViewData["Controller"] = "Aprovação";
+            ViewData["Controller"] = "Aprovado";
             ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
             ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
             return View("_Sucesso");
@@ -126,7 +128,7 @@ namespace PD_programado.Controllers {
             }
             comentarioRepositorio.EditarNoCSV(comentarioRecuperado);
                 
-            ViewData["Controller"] = "Rejeição";
+            ViewData["Controller"] = "Rejeitado";
             ViewData["Tipo"] = HttpContext.Session.GetString(SESSION_TIPO);
             ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
             return View("_Sucesso");
